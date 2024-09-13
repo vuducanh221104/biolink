@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  font-family: Georgia, serif;
+  background: url("https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif");
+}
+
+h1,
+p {
+  color: #ffffff !important;
+  text-align: center;
+  text-shadow: 15px 4px 20px #f35d06;
+}
+
+p {
+  font-size: 18px;
+  text-shadow: 3px 0 8px white;
+}
+
+.img-contain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -75px;
+}
+
+.img-button {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.profile-photo {
+  text-align: center;
+  background: black;
+  border-radius: 50%;
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+  box-shadow: 0 1px 13px lime;
+  transform: scale(0.5);
+  animation: pulse 2s infinite;
+  transition: all 0.4s ease-in-out;
+  animation: zoomInOut 2s infinite;
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(0.4); /* Kích thước ban đầu */
+  }
+  50% {
+    transform: scale(0.3); /* Thu nhỏ ảnh */
+  }
+  100% {
+    transform: scale(0.4); /* Phóng to về kích thước ban đầu */
+  }
+}
+
+.link-tree {
+  list-style: none;
+  padding: 0;
+  font-size: 16px;
+  margin-bottom: 50px;
+  text-align: center;
+  & a {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    text-shadow: -1px 0 5px CYAN, 0 1px 5px RED, 1px 0 5px CYAN, 0 -1px 5px RED;
+  }
+}
+
+.link-tree > li {
+  margin: 12px 0;
+}
+
+.link-tree > li a {
+  color: #364652;
+  background: #c7dbe6;
+  border-radius: 6px;
+  padding: 8px;
+  text-decoration: none;
+  max-width: 280px;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+
+.link-tree > li:nth-child(1) a {
+  background: #17a2b8;
+}
+
+.link-tree > li:nth-child(2) a {
+  background: #9cc0d3;
+}
+
+.link-tree > li:nth-child(3) a {
+  background: green;
+}
+
+.link-tree > li:nth-child(4) a {
+  background: #4d88a8;
+}
+
+.link-tree > li a:hover,
+.link-tree > li a:focus {
+  color: white;
+  background: #2d4f62;
+}
+
+/* install */
+@keyframes borderAnimation {
+  0% {
+    border-color: #006600;
+  }
+  25% {
+    border-color: #660099;
+  }
+  50% {
+    border-color: #339999;
+  }
+  75% {
+    border-color: #9999ff;
+  }
+  100% {
+    border-color: #ff0099;
+  }
+}
+.install {
+  text-align: center;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  animation: borderAnimation 4s linear infinite;
+
+  .install-margin {
+    margin: 30px 0;
+
+    p {
+      text-decoration: underline;
+      padding: 20px;
+    }
+  }
+
+  button {
+    text-align: center;
+    padding: 10px 0;
+    border: 2px solid #ffffff;
+    :hover {
+      opacity: 0.9;
+    }
+
+    i {
+      color: white;
+      font-size: 16px;
+      margin-right: 6px;
+    }
+  }
+}
+
+.install-margin h3 {
+  color: white;
+  text-decoration: underline;
+  text-shadow: 3px 0 8px white;
+}
+
+.install-margin button {
+  margin-top: 20px;
+  width: 34%;
+}
+
+.install-margin button a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  text-shadow: -1px 0 5px CYAN, 0 1px 5px RED, 1px 0 5px CYAN, 0 -1px 5px RED;
+}
+
+/* footer */
+.footer {
+  margin: 20px 0;
+}
+
+.footer p {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* animation text */
+.animated-text {
+  font-size: 2em;
+  color: #ffffff;
+  text-decoration: underline;
+  text-shadow: 1px 9px 9px #9999ff;
+  font-style: italic;
+  text-align: center;
+  opacity: 0; /* Bắt đầu ẩn */
+  transform: scale(0); /* Thu nhỏ lại khi bắt đầu */
+  animation: fadeInOut 4s ease-in-out infinite; /* Hiệu ứng lặp vô hạn */
+}
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0); /* Thu nhỏ lại */
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1); /* Hiện ra đầy đủ */
+  }
+}
+
+/* Thiết kế cơ bản cho trình phát nhạc */
+audio {
+  width: 300px;
+  margin-top: 20px;
+  display: block;
+}
+
+#backgroundMusic {
+  display: block; /* Hiển thị trình phát */
+}
+
+@media (max-width: 800px) {
+  .install {
+    button {
+      width: 80%;
+    }
+  }
+}
