@@ -124,29 +124,28 @@ function App() {
       <div className="install">
         <div className="install-margin">
           <h3>Install DNS</h3>
-          <button className="btn btn-warning">
-            <i className="bi bi-cloud-download"></i>
 
-            <a
-              target="_blank"
-              href="https://github.com/DuccAnhVu/ducanhdns/raw/main/Block-DNS/Revoke.mobileconfig"
-            >
+          <a
+            target="_blank"
+            href="https://github.com/DuccAnhVu/ducanhdns/raw/main/Block-DNS/Revoke.mobileconfig"
+          >
+            <button className="btn btn-warning">
+              <i className="bi bi-cloud-download"></i>
               Install
-            </a>
-          </button>
+            </button>
+          </a>
         </div>
         <div className="install">
           <div className="install-margin">
             <h3>File Chứng Chỉ (Esign Cert)</h3>
-            <button className="btn btn-info">
-              <i class="bi bi-file-earmark-zip"></i>{" "}
-              <a
-                target="_blank"
-                href="https://github.com/DuccAnhVu/ducanhdns/raw/main/Esign-IPA/Esign-Certs.zip"
-              >
-                Install
-              </a>
-            </button>
+            <a
+              target="_blank"
+              href="https://github.com/DuccAnhVu/ducanhdns/raw/main/Esign-IPA/Esign-Certs.zip"
+            >
+              <button className="btn btn-info">
+                <i class="bi bi-file-earmark-zip"></i> Install
+              </button>
+            </a>
           </div>
         </div>
       </div>
@@ -183,56 +182,54 @@ function App() {
       <div className="install">
         <div className="install-margin">
           <h3>Esign Free -Bypass Revoke-</h3>
-          <button className="btn btn-info">
-            <Image className="img-button" src={images.logo} alt="#" />
-            <a
-              target="_blank"
-              href="itms-services://?action=download-manifest&url=https://sign.applep12.com/GetPlist/66b8b57a-5198-8101-00d2-8b6f26a2ea49"
-            >
+
+          <a
+            target="_blank"
+            href="itms-services://?action=download-manifest&url=https://sign.applep12.com/GetPlist/66b8b57a-5198-8101-00d2-8b6f26a2ea49"
+          >
+            <button className="btn btn-info">
+              <Image className="img-button" src={images.logo} alt="#" />
               Esign Sunshine (Update)
-            </a>
-          </button>
-          <br></br>
-          <button className="btn btn-info">
-            <Image className="img-button" src={images.logo} alt="#" />
-            <a
-              target="_blank"
-              href="tms-services://?action=download-manifest&url=https://sign.applep12.com/GetPlist/66982035-3c9b-9f01-00a9-4ac651f01172"
-            >
+            </button>
+          </a>
+
+          <a
+            target="_blank"
+            href="itms-services://?action=download-manifest&url=https://sign.applep12.com/GetPlist/66982035-3c9b-9f01-00a9-4ac651f01172"
+          >
+            <button className="btn btn-info">
+              <Image className="img-button" src={images.logo} alt="#" />
               Esign China CITIC
-            </a>
-          </button>
-          <br></br>
+            </button>
+          </a>
 
-          <button className="btn btn-info">
-            <Image className="img-button" src={images.logo} alt="#" />
-            <a target="_blank" href="">
+          <a target="_blank" href="">
+            <button className="btn btn-info">
+              <Image className="img-button" src={images.logo} alt="#" />
               Esign ANBANG INSURANCE
-            </a>
-          </button>
-          <br></br>
-          <button className="btn btn-info">
-            <Image className="img-button" src={images.logo} alt="#" />
-            <a target="_blank" href="">
-              Esign Bank Of Chongqing
-            </a>
-          </button>
+            </button>
+          </a>
 
-          <br></br>
-          <button className="btn btn-info">
-            <Image className="img-button" src={images.logo} alt="#" />
-            <a target="_blank" href="">
+          <a target="_blank" href="">
+            <button className="btn btn-info">
+              <Image className="img-button" src={images.logo} alt="#" />
+              Esign Bank Of Chongqing
+            </button>
+          </a>
+
+          <a target="_blank" href="">
+            <button className="btn btn-info">
+              <Image className="img-button" src={images.logo} alt="#" />
               Esign HDFC Life
-            </a>
-          </button>
-          <br></br>
-          <button className="btn btn-info">
-            <Image className="img-button" src={images.logo} alt="#" />
-            <a target="_blank" href="">
+            </button>
+          </a>
+
+          <a target="_blank" href="">
+            <button className="btn btn-info">
+              <Image className="img-button" src={images.logo} alt="#" />
               Esign Henan Provincial
-            </a>
-          </button>
-          <br></br>
+            </button>
+          </a>
         </div>
       </div>
 

@@ -9,6 +9,12 @@ body {
   background: url("https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif");
 }
 
+button {
+  font-size: 13px !important;
+  color: #ffffff !important;
+  text-shadow: -1px 0 5px CYAN, 0 1px 5px RED, 1px 0 5px CYAN, 0 -1px 5px RED;
+}
+
 h1,
 p {
   color: #ffffff !important;
@@ -106,8 +112,7 @@ p {
   background: #4d88a8;
 }
 
-.link-tree > li a:hover,
-.link-tree > li a:focus {
+.link-tree > li a:hover {
   color: white;
   background: #2d4f62;
 }
@@ -138,6 +143,10 @@ p {
 
   .install-margin {
     margin: 30px 0;
+    a {
+      display: block;
+      margin-top: 20px;
+    }
 
     p {
       text-decoration: underline;
@@ -168,7 +177,6 @@ p {
 }
 
 .install-margin button {
-  margin-top: 20px;
   width: 34%;
 }
 
