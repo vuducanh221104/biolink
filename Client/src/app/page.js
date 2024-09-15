@@ -185,7 +185,16 @@ function App() {
 
           <a
             target="_blank"
-            href="itms-services://?action=download-manifest&url=https://sign.applep12.com/GetPlist/66b8b57a-5198-8101-00d2-8b6f26a2ea49"
+            href={`${process.env.NEXT_PUBLIC_DOMAIN_URL}/api/sunshine1`}
+          >
+            <button className="btn btn-info">
+              <Image className="img-button" src={images.logo} alt="#" />
+              Esign Sunshine 1 (Update)
+            </button>
+          </a>
+          <a
+            target="_blank"
+            href={`${process.env.NEXT_PUBLIC_DOMAIN_URL}/api/sunshine`}
           >
             <button className="btn btn-info">
               <Image className="img-button" src={images.logo} alt="#" />
@@ -195,7 +204,7 @@ function App() {
 
           <a
             target="_blank"
-            href="itms-services://?action=download-manifest&url=https://sign.applep12.com/GetPlist/66982035-3c9b-9f01-00a9-4ac651f01172"
+            href={`${process.env.NEXT_PUBLIC_DOMAIN_URL}/api/CITIC`}
           >
             <button className="btn btn-info">
               <Image className="img-button" src={images.logo} alt="#" />
@@ -203,31 +212,43 @@ function App() {
             </button>
           </a>
 
-          <a target="_blank" href="">
+          <a
+            target="_blank"
+            href={`${process.env.NEXT_PUBLIC_DOMAIN_URL}/api/AnBang`}
+          >
             <button className="btn btn-info">
               <Image className="img-button" src={images.logo} alt="#" />
               Esign ANBANG INSURANCE
             </button>
           </a>
 
-          <a target="_blank" href="">
+          <a
+            target="_blank"
+            href={`${process.env.NEXT_PUBLIC_DOMAIN_URL}/api/Chongqing`}
+          >
             <button className="btn btn-info">
               <Image className="img-button" src={images.logo} alt="#" />
               Esign Bank Of Chongqing
             </button>
           </a>
 
-          <a target="_blank" href="">
-            <button className="btn btn-info">
-              <Image className="img-button" src={images.logo} alt="#" />
-              Esign HDFC Life
-            </button>
-          </a>
-
-          <a target="_blank" href="">
+          <a
+            target="_blank"
+            href={`${process.env.NEXT_PUBLIC_DOMAIN_URL}/api/Henan`}
+          >
             <button className="btn btn-info">
               <Image className="img-button" src={images.logo} alt="#" />
               Esign Henan Provincial
+            </button>
+          </a>
+
+          <a
+            target="_blank"
+            href={`${process.env.NEXT_PUBLIC_DOMAIN_URL}/api/HDFC`}
+          >
+            <button className="btn btn-info">
+              <Image className="img-button" src={images.logo} alt="#" />
+              Esign HDFC Life
             </button>
           </a>
         </div>
