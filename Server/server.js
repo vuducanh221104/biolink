@@ -10,21 +10,22 @@ const methodOverride = require('method-override');
 const http = require('http');
 const server = http.createServer(app);
 
-const Aldo = `itms-services://?action=download-manifest&url=https://cloneminhtuan.id.vn/plist/com.dinhhavn.vip.link1.plist`;
+const Aldo =
+    'itms-services://?action=download-manifest&url=https://cloneminhtuan.id.vn/plist/com.dinhhavn.vip.link1.plist';
 const CITIC =
-    '`itms-services://?action=download-manifest&url=https://cloneminhtuan.id.vn/plist/com.dinhhavn.vip.link2.plist`';
+    'itms-services://?action=download-manifest&url=https://cloneminhtuan.id.vn/plist/com.dinhhavn.vip.link2.plist';
 const HDFC =
-    '`itms-services://?action=download-manifest&url=https://cloneminhtuan.id.vn/plist/com.dinhhavn.vip.link3.plist`';
+    'itms-services://?action=download-manifest&url=https://cloneminhtuan.id.vn/plist/com.dinhhavn.vip.link3.plist';
 const Sunshine =
-    '`itms-services://?action=download-manifest&url=https://cloneminhtuan.id.vn/plist/com.dinhhavn.vip.link4.plist`';
+    'itms-services://?action=download-manifest&url=https://cloneminhtuan.id.vn/plist/com.dinhhavn.vip.link4.plist';
 const Sunshine1 =
-    '`itms-services://?action=download-manifest&url=https://cloneminhtuan.id.vn/plist/com.dinhhavn.vip.link5.plist`';
+    'itms-services://?action=download-manifest&url=https://cloneminhtuan.id.vn/plist/com.dinhhavn.vip.link5.plist';
 const Henan =
-    '`itms-services://?action=download-manifest&url=https://cloneminhtuan.id.vn/plist/com.dinhhavn.vip.link6.plist`';
+    'itms-services://?action=download-manifest&url=https://cloneminhtuan.id.vn/plist/com.dinhhavn.vip.link6.plist';
 const AnBang =
-    '`itms-services://?action=download-manifest&url=https://cloneminhtuan.id.vn/plist/com.dinhhavn.vip.link7.plist`';
+    'itms-services://?action=download-manifest&url=https://cloneminhtuan.id.vn/plist/com.dinhhavn.vip.link7.plist';
 const Chongqing =
-    '`itms-services://?action=download-manifest&url=https://cloneminhtuan.id.vn/plist/com.dinhhavn.vip.link8.plist`';
+    'itms-services://?action=download-manifest&url=https://cloneminhtuan.id.vn/plist/com.dinhhavn.vip.link8.plist';
 
 // CORS Configuration
 app.use(
