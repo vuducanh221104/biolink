@@ -123,8 +123,7 @@ function App() {
           </p>
         </div>
       </div>
-
-      {/*  */}
+      {/* DNS */}
       <div className="install">
         <div className="install-margin">
           <h3>Install DNS</h3>
@@ -139,18 +138,19 @@ function App() {
             </button>
           </a>
         </div>
-        <div className="install">
-          <div className="install-margin">
-            <h3>File Chứng Chỉ (Esign Cert)</h3>
-            <a
-              target="_blank"
-              href="https://github.com/DuccAnhVu/ducanhdns/raw/main/Esign-IPA/Esign-Certs.zip"
-            >
-              <button className="btn btn-info">
-                <i class="bi bi-file-earmark-zip"></i> Install
-              </button>
-            </a>
-          </div>
+      </div>
+      {/* Cert */}
+      <div className="install">
+        <div className="install-margin">
+          <h3>File Chứng Chỉ (Esign Cert)</h3>
+          <a
+            target="_blank"
+            href="https://github.com/DuccAnhVu/ducanhdns/raw/main/Esign-IPA/Esign-Certs.zip"
+          >
+            <button className="btn btn-info">
+              <i class="bi bi-file-earmark-zip"></i> Install
+            </button>
+          </a>
         </div>
       </div>
       {/* IPA */}
