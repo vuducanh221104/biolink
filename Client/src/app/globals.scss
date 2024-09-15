@@ -27,6 +27,22 @@ p {
   text-shadow: 3px 0 8px white;
 }
 
+.text-large {
+  font-size: 20px !important;
+}
+
+.link-tree {
+  & i::before {
+    margin-right: 3px !important;
+  }
+}
+
+.image-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin-right: 3px;
+}
 .img-contain {
   display: flex;
   justify-content: center;
@@ -85,7 +101,9 @@ p {
 }
 
 .link-tree > li a {
-  color: #364652;
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 14px;
   background: #c7dbe6;
   border-radius: 6px;
   padding: 8px;
@@ -113,7 +131,6 @@ p {
 }
 
 .link-tree > li a:hover {
-  color: white;
   background: #2d4f62;
 }
 

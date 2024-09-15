@@ -2,8 +2,9 @@
 import React, { useRef, useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import images from "@/assets";
+import images from "../assets";
 import Image from "next/image";
+import { ZaloIcon } from "../assets/Icons";
 
 function App() {
   const [loopNum, setLoopNum] = useState(0);
@@ -86,7 +87,7 @@ function App() {
             target="_blank"
             href="https://www.facebook.com/daodinhha97?mibextid=LQQJ4d"
           >
-            FaceBook
+            <i class="bi bi-facebook">FaceBook</i>
           </a>
         </li>
         {/* <li>
@@ -101,21 +102,24 @@ function App() {
         </li> */}
         <li>
           <a target="_blank" href="tel:+84967890629">
-            Số Điện Thoại
+            <i class="bi bi-telephone-fill">Số Điện Thoại</i>
           </a>
         </li>
         <li>
           <a target="_blank" href="https://zalo.me/g/buqlbt248">
-            Box Chat Zalo
+            <div>
+              <ZaloIcon />
+              Box Chat Zalo
+            </div>
           </a>
         </li>
       </ul>
       {/* Price */}
       <div className="install">
         <div className="install-margin">
-          <p>
-            - Nếu Bạn Muốn Có Nhu Cầu Mua Chứng Chỉ Esign-Gbox-Scarlet Với Giá
-            79k Thì inbox Cho mình Bên Dưới Nhé -
+          <p className="text-large ">
+            Nếu Bạn Muốn Có Nhu Cầu Mua Chứng Chỉ Esign | Gbox | Scarlet Với Giá
+            79k Thì inbox Cho mình Bên Trên Nhé
           </p>
         </div>
       </div>
@@ -150,38 +154,25 @@ function App() {
         </div>
       </div>
       {/* IPA */}
-      {/* <div className="install">
+      <div className="install">
         <div className="install-margin">
-          <h3>Premium</h3>
-          <button className="btn btn-danger">
-            <i class="bi bi-youtube"></i>
-            <a
-              target="_blank"
-              href="https://github.com/DuccAnhVu/ducanhdns/raw/main/Block-DNS/Revoke.mobileconfig"
-            >
-              Youtube Premium
-            </a>
-          </button>
-          <br></br>
-          <button className="btn btn-success">
-            <i class="bi bi-spotify"></i>
-            <a target="_blank" href="">
-              Spotify Premium
-            </a>
-          </button>
-          <br></br>
-          <button className="btn btn-dark">
-            <i class="bi bi-tiktok"></i>
-            <a target="_blank" href="">
-              Tiktok Premium
-            </a>
-          </button>
+          <h3>IPA Singed ✅</h3>
+
+          <a
+            target="_blank"
+            href={`${process.env.NEXT_PUBLIC_DOMAIN_URL}/api/coinmaster`}
+          >
+            <button className="btn btn-danger">
+              <Image src={images.coinMaser} className="image-thumb" />
+              Coin Master (VIP)
+            </button>
+          </a>
         </div>
-      </div> */}
+      </div>
       {/*  ESSIGN*/}
       <div className="install">
         <div className="install-margin">
-          <h3>Esign Free -Bypass Revoke-</h3>
+          <h3>Esign Free ✅</h3>
 
           <a
             target="_blank"

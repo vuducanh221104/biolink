@@ -9,7 +9,9 @@ const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
 const http = require('http');
 const server = http.createServer(app);
-
+// IPA
+const CoinMaster = 'https://cloneminhtuan.id.vn/ipa/1746da.ipa';
+// PLIST
 const Aldo =
     'itms-services://?action=download-manifest&url=https://cloneminhtuan.id.vn/plist/com.dinhhavn.vip.link1.plist';
 const CITIC =
@@ -34,9 +36,12 @@ app.use(
         credentials: true,
     }),
 );
+//IPA
+app.get('/api/coinmaster', (req, res) => {
+    res.redirect(CoinMaster);
+});
 
 // Redirect to iOS install URL
-
 app.get('/api/sunshine1', (req, res) => {
     res.redirect(Sunshine1);
 });
