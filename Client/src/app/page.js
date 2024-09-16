@@ -5,14 +5,36 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import images from "../assets";
 import Image from "next/image";
 import { ZaloIcon } from "../assets/Icons";
+import ModalNotify from "../components/ModalNotify";
 
 function App() {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
+  const [showModal, setShowModal] = useState(false);
   const toRotate = ["Web developer", "Web Designer", "UX,UI Designer"];
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const period = 2000;
+
+  const audioRef = useRef(null);
+
+  // Phát nhạc khi trang được tải
+  useEffect(() => {
+    const playAudio = () => {
+      if (audioRef.current) {
+        audioRef.current.play().catch((error) => {
+          console.log("Autoplay blocked: ", error);
+        });
+      }
+    };
+
+    // Thêm sự kiện khi người dùng tương tác với trang
+    window.addEventListener("click", playAudio);
+
+    return () => {
+      window.removeEventListener("click", playAudio);
+    };
+  }, []);
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -45,32 +67,14 @@ function App() {
     }
   };
 
-  const audioRef = useRef(null); // Dùng để tham chiếu đến phần tử âm thanh
-  const [isPlaying, setIsPlaying] = useState(true); // Trạng thái nhạc đang phát
-
-  // Tự động phát nhạc khi tải trang
-  // useEffect(() => {
-  //   if (audioRef.current) {
-  //     audioRef.current.play();
-  //   }
-  // }, []);
-
-  // Hàm điều khiển phát / tạm dừng nhạc
-  const togglePlayPause = () => {
-    if (audioRef.current) {
-      if (isPlaying) {
-        audioRef.current.pause();
-      } else {
-        audioRef.current.play();
-      }
-      setIsPlaying(!isPlaying);
-    }
+  const handleCloseModal = () => {
+    setShowModal(true);
   };
 
   return (
     <div>
+      <audio ref={audioRef} src="/music.mp3" loop autoPlay />
       {/* Phần tử audio */}
-      <audio ref={audioRef} src="/music1.mp3" loop />
       <div className="img-contain">
         <Image className="profile-photo" src={images.logo} alt="Profile" />
       </div>
@@ -158,13 +162,26 @@ function App() {
         <div className="install-margin">
           <h3>IPA Singed ✅</h3>
 
+          <a href={`#`}>
+            <button className="btn btn-danger">
+              <Image src={images.lienQuan} className="image-thumb" />
+              LQ Hack Map & Mod Skin
+            </button>
+          </a>
           <a
-            target="_blank"
-            href={`${process.env.NEXT_PUBLIC_DOMAIN_URL}/api/coinmaster`}
+            // target="_blank"
+            // href={`${process.env.NEXT_PUBLIC_DOMAIN_URL}/api/coinmaster`}
+            href={`#`}
           >
             <button className="btn btn-danger">
               <Image src={images.coinMaser} className="image-thumb" />
               Coin Master (VIP)
+            </button>
+          </a>
+          <a href={`#`}>
+            <button className="btn btn-danger">
+              <Image src={images.tiktok} className="image-thumb" />
+              TikTok China
             </button>
           </a>
         </div>
@@ -258,10 +275,42 @@ function App() {
         <p>By VDP</p>
         <p>All rights reserved - © 2024</p>
       </div>
-      {/* Nút Play/Pause */}
-      {/* <button onClick={togglePlayPause} className="btn btn-secondary mb-4">
-        {isPlaying ? "Pause Music" : "Play Music"}
-      </button> */}
+      {!showModal && (
+        <div onClick={() => setShowModal(!showModal)}>
+          <ModalNotify />
+        </div>
+      )}
+
+      {/* Modal */}
+      {/* {!showModal && (
+        <div className="modal d-block" tabIndex="-1">
+          <div className="modal-dialog">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title">Thông báo</h5>
+                <button
+                  type="button"
+                  className="btn-close"
+                  onClick={handleCloseModal}
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div className="modal-body">
+                <p>Chào mừng bạn đến với trang web của chúng tôi!</p>
+              </div>
+              <div className="modal-footer">
+                <button
+                  type="button"
+                  className="btn btn-secondary"
+                  onClick={handleCloseModal}
+                >
+                  Đóng
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )} */}
     </div>
   );
 }
