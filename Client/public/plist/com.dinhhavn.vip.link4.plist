@@ -11,7 +11,7 @@
 					<key>kind</key>
 					<string>software-package</string>
 					<key>url</key>
-					<string>https://github.com/khoindvnDNS/iOS/raw/main/Esign-iPA/Sunshine.ipa</string>
+					<string>https://github.com/DuccAnhVu/ducanhdns/raw/main/Esign-IPA/sunshine.ipa</string>
 				</dict>
 				<dict>
 					<key>kind</key>
@@ -19,21 +19,21 @@
 					<key>needs-shine</key>
 					<false/>
 					<key>url</key>
-					<string>https://github.com/khoindvnDNS/iOS/blob/main/es.png?raw=true</string>
+					<string>https://github.com/DuccAnhVu/ducanhdns/blob/main/imgE.png?raw=true</string>
 				</dict>
 			</array>
 			<key>metadata</key>
 			<dict>
 				<key>bundle-identifier</key>
-				<string>com.khoindvn.fans.link4</string>
+				<string>com.dinhhavn.vip.link4</string>
 				<key>bundle-version</key>
 				<string>1</string>
 				<key>kind</key>
 				<string>software</string>
 				<key>subtitle</key>
-				<string>5.0.0 (1)</string>
+				<string>5.0.2 (1)</string>
 				<key>title</key>
-				<string>ESign</string>
+				<string>ESign(Up)</string>
 			</dict>
 		</dict>
 	</array>
