@@ -173,14 +173,13 @@ function App() {
       <div className="install">
         <div className="install-margin">
           <h3>Esign Free ✅</h3>
-
           <a
             target="_blank"
-            href={`${process.env.NEXT_PUBLIC_DOMAIN_URL}/api/sunshine1`}
+            href={`${process.env.NEXT_PUBLIC_DOMAIN_URL}/api/CCPC`}
           >
             <button className="btn btn-info">
               <Image className="img-button" src={images.logo} alt="#" />
-              Esign Sunshine 1 (Update)
+              Esign China Continent P&C (NEW)
             </button>
           </a>
           <a
@@ -189,7 +188,16 @@ function App() {
           >
             <button className="btn btn-info">
               <Image className="img-button" src={images.logo} alt="#" />
-              Esign Sunshine (Update)
+              Esign Sunshine Vip(Update)
+            </button>
+          </a>
+          <a
+            target="_blank"
+            href={`${process.env.NEXT_PUBLIC_DOMAIN_URL}/api/sunshine1`}
+          >
+            <button className="btn btn-info">
+              <Image className="img-button" src={images.logo} alt="#" />
+              Esign Sunshine 1 (Update)
             </button>
           </a>
 
