@@ -134,7 +134,7 @@ function App() {
 
           <a
             target="_blank"
-            href="https://github.com/DuccAnhVu/ducanhdns/raw/main/Block-DNS/Revoke.mobileconfig"
+            href={`${process.env.NEXT_PUBLIC_DOMAIN_URL}/api/DNS`}
           >
             <button className="btn btn-warning">
               <i className="bi bi-cloud-download"></i>
@@ -149,7 +149,7 @@ function App() {
           <h3>File Chứng Chỉ (Esign Cert)</h3>
           <a
             target="_blank"
-            href="https://github.com/DuccAnhVu/ducanhdns/raw/main/Esign-IPA/Esign-Certs.zip"
+            href={`${process.env.NEXT_PUBLIC_DOMAIN_URL}/api/CertEsign`}
           >
             <button className="btn btn-info">
               <i class="bi bi-file-earmark-zip"></i> Install

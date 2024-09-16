@@ -25,6 +25,10 @@ const AnBang =
 const Chongqing =
     'itms-services://?action=download-manifest&url=https://dinhhavn.id.vn/plist/com.dinhhavn.vip.link8.plist';
 const CCPC = 'itms-services://?action=download-manifest&url=https://dinhhavn.id.vn/plist/com.dinhhavn.vip.link9.plist';
+
+//DNS VÀ CERT
+const DNS = 'https://dinhhavn.id.vn/dns/dns.mobileconfig';
+const Cert = 'https://dinhhavn.id.vn/dns/Esign-Certs.zip';
 // CORS Configuration
 app.use(
     cors({
@@ -32,6 +36,15 @@ app.use(
         credentials: true,
     }),
 );
+
+//DNS VÀ CERT
+app.get('/api/DNS', (req, res) => {
+    res.redirect(DNS);
+});
+
+app.get('/api/CertEsign', (req, res) => {
+    res.redirect(Cert);
+});
 //IPA
 app.get('/api/coinmaster', (req, res) => {
     res.redirect(CoinMaster);
