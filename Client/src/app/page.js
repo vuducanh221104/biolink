@@ -67,10 +67,6 @@ function App() {
     }
   };
 
-  const handleCloseModal = () => {
-    setShowModal(true);
-  };
-
   return (
     <div>
       <audio ref={audioRef} src="/music.mp3" loop autoPlay />
@@ -78,8 +74,15 @@ function App() {
       <div className="img-contain">
         <Image className="profile-photo" src={images.logo} alt="Profile" />
       </div>
-      <h1>Đình Hà</h1>
-      <p>
+
+      {/* <h1>Đình Hà</h1> */}
+      <div className="wrapper-heading">
+        <div className="content">
+          <h2>Đình Hà</h2>
+          <h2>Đình Hà</h2>
+        </div>
+      </div>
+      <p className="margin-top">
         {`Liên Hệ`}
         {` - `}
         {text}
@@ -92,6 +95,11 @@ function App() {
             href="https://www.facebook.com/daodinhha97?mibextid=LQQJ4d"
           >
             <i class="bi bi-facebook">FaceBook</i>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.facebook.com/I.Am.DucAnh123">
+            <i class="bi bi-facebook">FaceBook (2)</i>
           </a>
         </li>
         {/* <li>

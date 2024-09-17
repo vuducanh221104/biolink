@@ -18,9 +18,9 @@
 </array>
 </dict>
 <key>PayloadDisplayName</key>
-<string>🌼Chặn Thu Hồi</string>
+<string>✅Chặn Thu Hồi</string>
 <key>PayloadOrganization</key>
-<string>=> Tiết Kiệm Pin - Mát Máy 👍</string>
+<string>=> Tiết Kiệm Pin - Mát Máy</string>
 <key>PayloadIdentifier</key>
 <string>346775546643456655666</string>
 <key>PayloadType</key>
@@ -43,9 +43,9 @@
 </array>
 </dict>
 <key>PayloadDisplayName</key>
-<string>🌼Chặn Thu Hồi - OTA</string>
+<string>✅Chặn Thu Hồi - OTA</string>
 <key>PayloadOrganization</key>
-<string>=> Tiết Kiệm Pin - Mát Máy 👍</string>
+<string>=> Tiết Kiệm Pin - Mát Máy</string>
 <key>PayloadIdentifier</key>
 <string>3467755466434566556</string>
 <key>PayloadType</key>
@@ -64,9 +64,9 @@
 </array>
 </dict>
 <key>PayloadDisplayName</key>
-<string>🌼Chặn Thu Hồi - OTA - ADS</string>
+<string>✅Chặn Thu Hồi - OTA - ADS</string>
 <key>PayloadOrganization</key>
-<string>=> Hao Pin - Nóng Máy 👎</string>
+<string>=> Hao Pin - Nóng Máy</string>
 <key>PayloadIdentifier</key>
 <string>3467755466434566</string>
 <key>PayloadType</key>
@@ -78,7 +78,7 @@
 </dict> 
 </array>
 <key>PayloadDisplayName</key>
-<string>🌼Chặn Thu Hồi - OTA - ADS</string>
+<string>dinhhavn.id.vn</string>
 <key>PayloadDescription</key>
 <string>
 🌟 Lưu Ý:
