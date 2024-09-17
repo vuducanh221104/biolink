@@ -82,11 +82,11 @@ function App() {
           <h2>Đình Hà</h2>
         </div>
       </div>
-      <p className="margin-top text-custom" style={{ marginBottom: "0" }}>
+      {/* <p className="margin-top text-custom" style={{ marginBottom: "0" }}>
         -Đức Anh-
-      </p>
-      <p>
-        {`Liên Hệ`}
+      </p> */}
+      <p className="margin-top">
+        {`Đức Anh`}
         {` - `}
         {text}
       </p>
