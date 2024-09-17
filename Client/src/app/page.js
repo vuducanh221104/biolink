@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import images from "../assets";
 import Image from "next/image";
-import { ZaloIcon } from "../assets/Icons";
+import { ZaloIcon, FaceBookICcon } from "../assets/Icons";
 import ModalNotify from "../components/ModalNotify";
 
 function App() {
@@ -82,7 +82,10 @@ function App() {
           <h2>Đình Hà</h2>
         </div>
       </div>
-      <p className="margin-top">
+      <p className="margin-top text-custom" style={{ marginBottom: "0" }}>
+        -Đức Anh-
+      </p>
+      <p>
         {`Liên Hệ`}
         {` - `}
         {text}
@@ -94,12 +97,18 @@ function App() {
             target="_blank"
             href="https://www.facebook.com/daodinhha97?mibextid=LQQJ4d"
           >
-            <i class="bi bi-facebook">FaceBook</i>
+            <i>
+              <FaceBookICcon />
+              FaceBook
+            </i>
           </a>
         </li>
         <li>
           <a target="_blank" href="https://www.facebook.com/I.Am.DucAnh123">
-            <i class="bi bi-facebook">FaceBook (2)</i>
+            <i>
+              <FaceBookICcon />
+              FaceBook(2)
+            </i>
           </a>
         </li>
         {/* <li>

@@ -27,11 +27,15 @@ p {
   text-shadow: 3px 0 8px white;
 }
 .margin-top {
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .text-large {
   font-size: 20px !important;
+}
+.text-custom {
+  font-size: 9px;
+  text-shadow: 8px 0 8px white;
 }
 
 .link-tree {
@@ -265,6 +269,7 @@ audio {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 10px;
 }
 .content {
   display: flex;
@@ -287,7 +292,7 @@ audio {
 
 .content h2:nth-child(2) {
   color: #c19bf5;
-  animation: animate 4s ease-in-out infinite;
+  animation: animate 1s ease-in-out infinite;
 }
 
 @keyframes animate {
