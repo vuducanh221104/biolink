@@ -70,6 +70,8 @@ function App() {
   return (
     <div>
       {/* Phần tử audio */}
+
+      <audio ref={audioRef} src="/music.mp3" loop autoPlay />
       <div className="img-contain">
         <Image className="profile-photo" src={images.logo} alt="Profile" />
       </div>
