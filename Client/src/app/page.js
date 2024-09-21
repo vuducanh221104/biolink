@@ -69,7 +69,6 @@ function App() {
 
   return (
     <div>
-      <audio ref={audioRef} src="/music.mp3" loop autoPlay />
       {/* Phần tử audio */}
       <div className="img-contain">
         <Image className="profile-photo" src={images.logo} alt="Profile" />
@@ -201,12 +200,46 @@ function App() {
               TikTok China
             </button>
           </a>
+          <a href={`#`}>
+            <button className="btn btn-danger">
+              <Image src={images.spotify} className="image-thumb" />
+              Spotify Premium
+            </button>
+          </a>
         </div>
       </div>
       {/*  ESSIGN*/}
       <div className="install">
         <div className="install-margin">
           <h3>Esign Free ✅</h3>
+          <a
+            target="_blank"
+            href={`${process.env.NEXT_PUBLIC_DOMAIN_URL}/api/VNPOST`}
+          >
+            <button className="btn btn-info">
+              <Image className="img-button" src={images.logo} alt="#" />
+              Esign VIETNAM POSTS & TG - HCMC (NEW)
+            </button>
+          </a>
+          <a
+            target="_blank"
+            href={`${process.env.NEXT_PUBLIC_DOMAIN_URL}/api/VNTechno`}
+          >
+            <button className="btn btn-info">
+              <Image className="img-button" src={images.logo} alt="#" />
+              Esign VIETNAM TECHNO & CJ - BANK (NEW)
+            </button>
+          </a>
+          <a
+            target="_blank"
+            href={`${process.env.NEXT_PUBLIC_DOMAIN_URL}/api/IT`}
+          >
+            <button className="btn btn-info">
+              <Image className="img-button" src={images.logo} alt="#" />
+              Esign IT& TSC -Viettel (NEW)
+            </button>
+          </a>
+
           <a
             target="_blank"
             href={`${process.env.NEXT_PUBLIC_DOMAIN_URL}/api/CCPC`}
@@ -286,48 +319,17 @@ function App() {
           </a>
         </div>
       </div>
-
       {/* Footer */}
       <div className="footer">
         <p>By VDP</p>
         <p>All rights reserved - © 2024</p>
       </div>
+
       {!showModal && (
         <div onClick={() => setShowModal(!showModal)}>
           <ModalNotify />
         </div>
       )}
-
-      {/* Modal */}
-      {/* {!showModal && (
-        <div className="modal d-block" tabIndex="-1">
-          <div className="modal-dialog">
-            <div className="modal-content">
-              <div className="modal-header">
-                <h5 className="modal-title">Thông báo</h5>
-                <button
-                  type="button"
-                  className="btn-close"
-                  onClick={handleCloseModal}
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div className="modal-body">
-                <p>Chào mừng bạn đến với trang web của chúng tôi!</p>
-              </div>
-              <div className="modal-footer">
-                <button
-                  type="button"
-                  className="btn btn-secondary"
-                  onClick={handleCloseModal}
-                >
-                  Đóng
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      )} */}
     </div>
   );
 }

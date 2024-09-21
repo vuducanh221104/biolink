@@ -25,6 +25,11 @@ const AnBang =
 const Chongqing =
     'itms-services://?action=download-manifest&url=https://dinhhavn.id.vn/plist/com.dinhhavn.vip.link8.plist';
 const CCPC = 'itms-services://?action=download-manifest&url=https://dinhhavn.id.vn/plist/com.dinhhavn.vip.link9.plist';
+const VNPOST =
+    'itms-services://?action=download-manifest&url=https://dinhhavn.id.vn/plist/com.dinhhavn.vip.link10.plist';
+const IT = 'itms-services://?action=download-manifest&url=https://dinhhavn.id.vn/plist/com.dinhhavn.vip.link11.plist';
+const VNTechno =
+    'itms-services://?action=download-manifest&url=https://dinhhavn.id.vn/plist/com.dinhhavn.vip.link12.plist';
 
 //DNS VÀ CERT
 const DNS = 'https://dinhhavn.id.vn/dns/dns.mobileconfig';
@@ -51,6 +56,17 @@ app.get('/api/coinmaster', (req, res) => {
 });
 
 // Redirect to iOS install URL
+app.get('/api/VNPOST', (req, res) => {
+    res.redirect(VNPOST);
+});
+
+app.get('/api/VNTechno', (req, res) => {
+    res.redirect(VNTechno);
+});
+
+app.get('/api/IT', (req, res) => {
+    res.redirect(IT);
+});
 app.get('/api/CCPC', (req, res) => {
     res.redirect(CCPC);
 });
