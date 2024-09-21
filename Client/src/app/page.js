@@ -227,7 +227,7 @@ function App() {
           >
             <button className="btn btn-info">
               <Image className="img-button" src={images.logo} alt="#" />
-              Esign VIETNAM TECHNO & CJ - BANK (NEW)
+              Esign VIETNAM TECHNOLOGY & CJ - BANK (NEW)
             </button>
           </a>
           <a
