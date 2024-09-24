@@ -11,8 +11,8 @@
 					<key>kind</key>
 					<string>software-package</string>
 					<key>url</key>
-					<string>https://github.com/DuccAnhVu/ducanhdns/raw/main/Esign-IPA/sunshine.ipa</string>
-				</dict>
+					<string>https://dinhhavn.id.vn/ipa/SunShineVip.ipa</string>
+				</dict>SunShineVip.ipa
 				<dict>
 					<key>kind</key>
 					<string>display-image</string>
@@ -33,7 +33,7 @@
 				<key>subtitle</key>
 				<string>5.0.2 (1)</string>
 				<key>title</key>
-				<string>ESign(Up)</string>
+				<string>ESign(New)</string>
 			</dict>
 		</dict>
 	</array>
