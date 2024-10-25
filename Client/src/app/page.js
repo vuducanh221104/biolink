@@ -1,5 +1,11 @@
 "use client";
-import React, { useRef, useState, useEffect, useCallback } from "react";
+import React, {
+  useRef,
+  useState,
+  useEffect,
+  useCallback,
+  useMemo,
+} from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import images from "../assets";
@@ -11,7 +17,10 @@ function App() {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [showModal, setShowModal] = useState(false);
-  const toRotate = ["Web developer", "Web Designer", "UX,UI Designer"];
+  const toRotate = useMemo(
+    () => ["Web developer", "Web Designer", "UX,UI Designer"],
+    []
+  );
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const period = 2000;
@@ -79,7 +88,6 @@ function App() {
         />
       </div>
 
-      {/* <h1>Đình Hà</h1> */}
       <div className="wrapper-heading">
         <div className="content">
           <h2>Đình Hà</h2>

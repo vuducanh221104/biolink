@@ -4,7 +4,7 @@
 const ShowUUID = () => {
   return (
     <div>
-      <p>Received UUID</p> // Điều chỉnh theo cấu trúc dữ liệu trả về
+      <p>Received UUID</p>
     </div>
   );
 };
