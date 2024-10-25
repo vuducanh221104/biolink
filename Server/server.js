@@ -97,12 +97,10 @@ app.get('/api/HDFC', (req, res) => {
     res.redirect(HDFC);
 });
 
-app.post('/api/submit-uuid', (req, res) => {
-    const deviceUUID = req.body; // UUID của thiết bị
-    console.log('Received UUID:', deviceUUID);
+app.get('/api/submit-uuid', (req, res) => {
+    const deviceUUID = req.body;
     const redirectUrl = `https://dinhhavn.id.vn/sign/uuid/endpoint?UUID=${deviceUUID}`;
-    res.redirect(redirectUrl);
-    // res.send('UUID received successfully');
+    res.redirect(redirectUrl); // Redirect tới URL với UUID
 });
 
 // Middleware Configuration
