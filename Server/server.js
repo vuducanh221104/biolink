@@ -9,6 +9,7 @@ const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
 const http = require('http');
 const server = http.createServer(app);
+app.use(express.json());
 // IPA
 const CoinMaster = 'https://dinhhavn.id.vn/ipa/1746da.ipa';
 // PLIST
@@ -94,6 +95,12 @@ app.get('/api/Henan', (req, res) => {
 });
 app.get('/api/HDFC', (req, res) => {
     res.redirect(HDFC);
+});
+
+app.get('/api/submit-uuid', (req, res) => {
+    const deviceUUID = req.body; // UUID của thiết bị
+    console.log('Received UUID:', deviceUUID);
+    res.send('UUID received successfully');
 });
 
 // Middleware Configuration
