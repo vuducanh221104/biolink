@@ -97,7 +97,7 @@ app.get('/api/HDFC', (req, res) => {
     res.redirect(HDFC);
 });
 
-app.get('/api/submit-uuid', (req, res) => {
+app.post('/api/submit-uuid', (req, res) => {
     const deviceUUID = req.body; // UUID của thiết bị
     console.log('Received UUID:', deviceUUID);
     res.send('UUID received successfully');
