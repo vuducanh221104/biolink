@@ -43,7 +43,7 @@ function App() {
     return () => {
       clearInterval(ticker);
     };
-  }, [text]);
+  }, [text, delta, tick]);
 
   const tick = () => {
     let i = loopNum % toRotate.length;
@@ -73,7 +73,11 @@ function App() {
 
       <audio ref={audioRef} src="/music.mp3" loop autoPlay />
       <div className="img-contain">
-        <Image className="profile-photo" src={images.logo} alt="Profile" />
+        <Image
+          className="profile-photo"
+          src={images.logo}
+          alt="Profile photo"
+        />
       </div>
 
       {/* <h1>Đình Hà</h1> */}
@@ -124,7 +128,7 @@ function App() {
         </li> */}
         <li>
           <a target="_blank" href="tel:+84967890629">
-            <i class="bi bi-telephone-fill">Số Điện Thoại</i>
+            <i className="bi bi-telephone-fill">Số Điện Thoại</i>
           </a>
         </li>
         <li>
@@ -170,7 +174,7 @@ function App() {
             href={`${process.env.NEXT_PUBLIC_DOMAIN_URL}/api/CertEsign`}
           >
             <button className="btn btn-info">
-              <i class="bi bi-file-earmark-zip"></i> Install
+              <i className="bi bi-file-earmark-zip"></i> Install
             </button>
           </a>
         </div>
