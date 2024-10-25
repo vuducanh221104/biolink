@@ -98,7 +98,10 @@ app.get('/api/HDFC', (req, res) => {
 });
 
 app.get('/api/submit-uuid', (req, res) => {
-    const deviceUUID = req.body;
+    const deviceUUID = req.body; // Lấy UUID từ req.body
+    if (!deviceUUID) {
+        return res.status(400).json({ message: 'Missing UUID in request body' });
+    }
     const redirectUrl = `https://dinhhavn.id.vn/sign/uuid/endpoint?UUID=${deviceUUID}`;
     res.redirect(redirectUrl); // Redirect tới URL với UUID
 });
