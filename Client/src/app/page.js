@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState, useEffect, useCallback } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import images from "../assets";
@@ -36,6 +36,28 @@ function App() {
     };
   }, []);
 
+  const tick = useCallback(() => {
+    let i = loopNum % toRotate.length;
+    let fullText = toRotate[i];
+    let updateText = isDeleting
+      ? fullText.substring(0, text.length - 1)
+      : fullText.substring(0, text.length + 1);
+    setText(updateText);
+
+    if (isDeleting) {
+      setDelta((prevDelta) => prevDelta / 2);
+    }
+
+    if (!isDeleting && updateText === fullText) {
+      setIsDeleting(true);
+      setDelta(period);
+    } else if (isDeleting && updateText === "") {
+      setIsDeleting(false);
+      setLoopNum(loopNum + 1);
+      setDelta(300);
+    }
+  }, [isDeleting, loopNum, period, text, toRotate]);
+
   useEffect(() => {
     let ticker = setInterval(() => {
       tick();
@@ -44,29 +66,6 @@ function App() {
       clearInterval(ticker);
     };
   }, [text, delta, tick]);
-
-  const tick = () => {
-    let i = loopNum % toRotate.length;
-    let fullText = toRotate[i];
-    let UpdateText = isDeleting
-      ? fullText.substring(0, text.length - 1)
-      : fullText.substring(0, text.length + 1);
-    setText(UpdateText);
-
-    if (isDeleting) {
-      setDelta((preDelta) => preDelta / 2);
-    }
-
-    if (!isDeleting && UpdateText === fullText) {
-      setIsDeleting(true);
-      setDelta(period);
-    } else if (isDeleting && UpdateText === "") {
-      setIsDeleting(false);
-      setLoopNum(loopNum + 1);
-      setDelta(300);
-    }
-  };
-
   return (
     <div>
       {/* Phần tử audio */}
@@ -186,7 +185,11 @@ function App() {
 
           <a href={`#`}>
             <button className="btn btn-danger">
-              <Image src={images.lienQuan} className="image-thumb" />
+              <Image
+                src={images.lienQuan}
+                className="image-thumb"
+                alt="lienquan"
+              />
               LQ Hack Map & Mod Skin
             </button>
           </a>
@@ -196,19 +199,31 @@ function App() {
             href={`#`}
           >
             <button className="btn btn-danger">
-              <Image src={images.coinMaser} className="image-thumb" />
+              <Image
+                src={images.coinMaser}
+                className="image-thumb"
+                alt="coinMaster"
+              />
               Coin Master (VIP)
             </button>
           </a>
           <a href={`#`}>
             <button className="btn btn-danger">
-              <Image src={images.tiktok} className="image-thumb" />
+              <Image
+                src={images.tiktok}
+                className="image-thumb"
+                alt="TiktokChina"
+              />
               TikTok China
             </button>
           </a>
           <a href={`#`}>
             <button className="btn btn-danger">
-              <Image src={images.spotify} className="image-thumb" />
+              <Image
+                src={images.spotify}
+                className="image-thumb"
+                alt="spotify "
+              />
               Spotify Premium
             </button>
           </a>
