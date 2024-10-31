@@ -31,6 +31,14 @@ const VNPOST =
 const IT = 'itms-services://?action=download-manifest&url=https://dinhhavn.id.vn/plist/com.dinhhavn.vip.link11.plist';
 const VNTechno =
     'itms-services://?action=download-manifest&url=https://dinhhavn.id.vn/plist/com.dinhhavn.vip.link12.plist';
+const GacTrump =
+    'itms-services://?action=download-manifest&url=https://dinhhavn.id.vn/plist/com.dinhhavn.vip.link15.plist';
+const SunLife =
+    'itms-services://?action=download-manifest&url=https://dinhhavn.id.vn/plist/com.dinhhavn.vip.link13.plist';
+const MyLan =
+    'itms-services://?action=download-manifest&url=https://dinhhavn.id.vn/plist/com.dinhhavn.vip.link14.plist';
+const Arada =
+    'itms-services://?action=download-manifest&url=https://dinhhavn.id.vn/plist/com.dinhhavn.vip.link16.plist';
 
 //DNS VÀ CERT
 const DNS = 'https://dinhhavn.id.vn/dns/dns.mobileconfig';
@@ -95,6 +103,18 @@ app.get('/api/Henan', (req, res) => {
 });
 app.get('/api/HDFC', (req, res) => {
     res.redirect(HDFC);
+});
+app.get('/api/GacTrump', (req, res) => {
+    res.redirect(GacTrump);
+});
+app.get('/api/SunLife', (req, res) => {
+    res.redirect(SunLife);
+});
+app.get('/api/MyLan', (req, res) => {
+    res.redirect(MyLan);
+});
+app.get('/api/Arada', (req, res) => {
+    res.redirect(Arada);
 });
 
 app.get('/api/submit-uuid', (req, res) => {
