@@ -97,7 +97,38 @@ app.get('/api/HDFC', (req, res) => {
     res.redirect(HDFC);
 });
 
-app.post('/api/submit-uuid', (req, res) => {
+app.get('/api/submit-uuid', (req, res) => {
+    const deviceUUID = req.body; // Lấy UUID từ req.body
+    if (!deviceUUID) {
+        return res.status(400).json({ message: 'Missing UUID in request body' });
+    }
+    const redirectUrl = `https://dinhhavn.id.vn/sign/uuid/endpoint?UUID=${deviceUUID}`;
+
+    // Trả về mã trạng thái 200 và thông báo thành công cùng với URL
+    res.redirect(200, redirectUrl);
+});
+
+app.get('/api/submit-uuid-post', (req, res) => {
+    const deviceUUID = req.body; // Lấy UUID từ req.body
+    if (!deviceUUID) {
+        return res.status(400).json({ message: 'Missing UUID in request body' });
+    }
+    const redirectUrl = `https://dinhhavn.id.vn/sign/uuid/endpoint?UUID=${deviceUUID}`;
+
+    // Trả về mã trạng thái 200 và thông báo thành công cùng với URL
+    res.redirect(200, redirectUrl);
+});
+
+app.post('/api/submit-uuid-apple', (req, res) => {
+    const deviceUUID = req.headers['x-apple-device-id'] || req.body.deviceUUID;
+    if (!deviceUUID) {
+        return res.status(400).json({ message: 'Missing UUID in request' });
+    }
+    const redirectUrl = `https://dinhhavn.id.vn/sign/uuid/endpoint?UUID=${deviceUUID}`;
+    res.redirect(200, redirectUrl);
+});
+
+app.get('/api/submit-uuid-get', (req, res) => {
     const deviceUUID = req.headers['x-apple-device-id'] || req.body.deviceUUID;
     if (!deviceUUID) {
         return res.status(400).json({ message: 'Missing UUID in request' });
