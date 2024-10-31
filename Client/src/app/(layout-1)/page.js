@@ -7,16 +7,18 @@ import React, {
   useMemo,
 } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import images from "../../assets";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import images from "../assets";
 import Image from "next/image";
-import { ZaloIcon, FaceBookICcon } from "../assets/Icons";
-import ModalNotify from "../components/ModalNotify";
+import { ZaloIcon, FaceBookICcon, TelegramIcon } from "../../assets/Icons";
+import ModalNotify from "../../components/ModalNotify";
+import Link from "next/link";
 
 function App() {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [showModal, setShowModal] = useState(false);
+
   const toRotate = useMemo(
     () => ["Web developer", "Web Designer", "UX,UI Designer"],
     []
@@ -75,12 +77,12 @@ function App() {
       clearInterval(ticker);
     };
   }, [text, delta, tick]);
+
   return (
     <div>
       {/* Phần tử audio */}
-
       <audio ref={audioRef} src="/music.mp3" loop autoPlay />
-      <div className="img-contain">
+      <div className="img-contain" id="contact">
         <Image
           className="profile-photo"
           src={images.logo}
@@ -94,9 +96,6 @@ function App() {
           <h2>Đình Hà</h2>
         </div>
       </div>
-      {/* <p className="margin-top text-custom" style={{ marginBottom: "0" }}>
-        -Đức Anh-
-      </p> */}
       <p className="margin-top">
         {`Đức Anh`}
         {` - `}
@@ -111,7 +110,7 @@ function App() {
           >
             <i>
               <FaceBookICcon />
-              FaceBook
+              FaceBook(Admin 1)
             </i>
           </a>
         </li>
@@ -119,7 +118,7 @@ function App() {
           <a target="_blank" href="https://www.facebook.com/I.Am.DucAnh123">
             <i>
               <FaceBookICcon />
-              FaceBook(2)
+              FaceBook(Admin 2)
             </i>
           </a>
         </li>
@@ -146,13 +145,52 @@ function App() {
             </div>
           </a>
         </li>
+        <li>
+          <a target="_blank" href="https://t.me/dinhhavn">
+            <div>
+              <TelegramIcon />
+              Box Chat Telegram
+            </div>
+          </a>
+        </li>
       </ul>
+      <div className="install">
+        <div className="install-margin">
+          <h3 className="buy-cert-text-color">MUA CHỨNG CHỈ 50K</h3>
+          <ul className="link-tree">
+            <li className="cert-1">
+              <Link href="/cert">
+                <i>
+                  <span className="apple-icon"></span>
+                  Xem Gói Chứng Chỉ Apple
+                </i>
+              </Link>
+            </li>
+            <li className="cert-2">
+              <a target="_blank" href="https://zalo.me/g/buqlbt248">
+                <i>
+                  <Image
+                    src={images.iconCheck}
+                    alt="logo"
+                    width={20}
+                    height={20}
+                    style={{ borderRadius: "30px" }}
+                  />
+                  Nhóm Check Uy Tín
+                </i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
       {/* Price */}
       <div className="install">
         <div className="install-margin">
-          <p className="text-large ">
-            Nếu Bạn Muốn Có Nhu Cầu Mua Chứng Chỉ Esign | Gbox | Scarlet Với Giá
-            79k Thì inbox Cho mình Bên Trên Nhé
+          <p className="text-large">
+            <Link href="/cert" style={{ color: "white !important" }}>
+              Nếu Bạn Muốn Có Nhu Cầu Mua Chứng Chỉ Esign | Gbox | Scarlet Với
+              Giá 50k Thì inbox Cho mình Bên Trên Nhé
+            </Link>
           </p>
         </div>
       </div>
@@ -239,7 +277,7 @@ function App() {
       </div>
       {/*  ESSIGN*/}
       <div className="install">
-        <div className="install-margin">
+        <div className="install-margin" id="esign-free">
           <h3>Esign Free ✅</h3>
           <a
             target="_blank"
@@ -353,7 +391,6 @@ function App() {
         <p>By VDP</p>
         <p>All rights reserved - © 2024</p>
       </div>
-
       {!showModal && (
         <div onClick={() => setShowModal(!showModal)}>
           <ModalNotify />
