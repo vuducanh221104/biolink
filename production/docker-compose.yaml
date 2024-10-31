@@ -1,13 +1,5 @@
 version: "3"
 services:
-  # mongo_db:
-  #   image: mongo:latest
-  #   restart: always
-  #   ports:
-  #     - 27018:27017
-  #   expose:
-  #     - 27017
-
   backend:
     build:
       context: ../Server
@@ -16,9 +8,6 @@ services:
     environment:
       PORT: 4000
       BASE_URL_CLIENT: http://localhost
-      # JWT_ACCESS_KEY: ducanh123
-      # JWT_REFRESH_KEY: ducanh2211
-      # DB_URI: mongodb+srv://dogotrieu:M7L0tWGgulKzDTLO@dogotrieu.tus5r.mongodb.net/dogotrieu_database
     ports:
       - 4000:4000
     expose:
@@ -31,8 +20,6 @@ services:
     restart: always
     env_file:
       - ../Client/.env
-    # environment:
-    #   NODE_ENV: production
     ports:
       - 3000:3000
     expose:
