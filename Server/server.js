@@ -128,13 +128,13 @@ app.post('/api/submit-uuid-apple', (req, res) => {
     res.redirect(200, redirectUrl);
 });
 
-app.get('/api/submit-uuid-get', (req, res) => {
-    const deviceUUID = req.headers['x-apple-device-id'] || req.body.deviceUUID;
-    if (!deviceUUID) {
-        return res.status(400).json({ message: 'Missing UUID in request' });
-    }
-    const redirectUrl = `https://dinhhavn.id.vn/sign/uuid/endpoint?UUID=${deviceUUID}`;
-    res.redirect(200, redirectUrl);
+app.get('/api/submit-uuid-get/', (req, res) => {
+    // Vô hiệu hóa cache
+    console.log(req?.body);
+    console.log(req?.query);
+    console.log(req?.header);
+    // Gửi phản hồi với mã trạng thái 200 OK
+    res.status(200).send('Response OK!');
 });
 
 // Middleware Configuration
