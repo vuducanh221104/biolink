@@ -17,13 +17,13 @@ export default function Home() {
                 <Image
                   src={images.banner}
                   alt="image"
-                  fill
+                  layout="responsive"
                   className="img-banner"
                 />
                 <Image
                   src={images.signApple}
                   alt="image-123"
-                  fill
+                  layout="responsive"
                   className="img-apple"
                 />
                 <p className="price-sale">79.000đ</p>
@@ -100,13 +100,13 @@ export default function Home() {
                 <Image
                   src={images.banner}
                   alt="image"
-                  fill
+                  layout="responsive"
                   className="img-banner"
                 />
                 <Image
                   src={images.signApple}
                   alt="image"
-                  fill
+                  layout="responsive"
                   className="img-apple"
                 />
                 <p className="price-sale">99.000đ</p>
@@ -185,13 +185,13 @@ export default function Home() {
                 <Image
                   src={images.banner}
                   alt="image"
-                  fill
+                  layout="responsive"
                   className="img-banner"
                 />
                 <Image
                   src={images.signApple}
                   alt="image"
-                  fill
+                  layout="responsive"
                   className="img-apple"
                 />
                 <p className="price-sale">150.000đ</p>

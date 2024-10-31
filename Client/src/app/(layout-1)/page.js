@@ -19,6 +19,24 @@ function App() {
   const [isDeleting, setIsDeleting] = useState(false);
   const [showModal, setShowModal] = useState(false);
 
+  const esignLinks = [
+    { href: "/api/VNPOST", label: "Esign VIETNAM POSTS & TG - HCMC (UPDATE)" },
+    {
+      href: "/api/GacTrump",
+      label: "Esign Gac Trumpchi Car Sales Co., Ltd (NEW)",
+    },
+    { href: "/api/SunLife", label: "Esign Sun Life Everbright (NEW)" },
+    { href: "/api/Mylan", label: "Esign Mylan Inc." },
+    { href: "/api/Arada", label: "Esign ARADA Co., Ltd." },
+    { href: "/api/CCPC", label: "Esign China Continent P&C (NEW)" },
+    { href: "/api/sunshine1", label: "Esign Sunshine 1 (Update)" },
+    { href: "/api/CITIC", label: "Esign China CITIC" },
+    { href: "/api/AnBang", label: "Esign ANBANG INSURANCE" },
+    { href: "/api/Chongqing", label: "Esign Bank Of Chongqing" },
+    { href: "/api/Henan", label: "Esign Henan Provincial" },
+    { href: "/api/HDFC", label: "Esign HDFC Life" },
+    { href: "/api/sunshine", label: "Esign Sunshine Vip" },
+  ];
   const toRotate = useMemo(
     () => ["Web developer", "Web Designer", "UX,UI Designer"],
     []
@@ -82,6 +100,7 @@ function App() {
     <div>
       {/* Phần tử audio */}
       <audio ref={audioRef} src="/music.mp3" loop autoPlay />
+
       <div className="img-contain" id="contact">
         <Image
           className="profile-photo"
@@ -279,123 +298,30 @@ function App() {
       <div className="install">
         <div className="install-margin" id="esign-free">
           <h3>Esign Free ✅</h3>
-          <a
-            target="_blank"
-            href={`${process.env.NEXT_PUBLIC_DOMAIN_URL}/api/sunshine`}
-          >
-            <button className="btn btn-info">
-              <Image className="img-button" src={images.logo} alt="#" />
-              Esign Sunshine Vip(Update)
-            </button>
-          </a>
-          <a
-            target="_blank"
-            href={`${process.env.NEXT_PUBLIC_DOMAIN_URL}/api/VNPOST`}
-          >
-            <button className="btn btn-info">
-              <Image className="img-button" src={images.logo} alt="#" />
-              Esign VIETNAM POSTS & TG - HCMC (NEW)
-            </button>
-          </a>
-          <a
-            target="_blank"
-            href={`${process.env.NEXT_PUBLIC_DOMAIN_URL}/api/VNTechno`}
-          >
-            <button className="btn btn-info">
-              <Image className="img-button" src={images.logo} alt="#" />
-              Esign VIETNAM TECHNOLOGY & CJ - BANK (NEW)
-            </button>
-          </a>
-          <a
-            target="_blank"
-            href={`${process.env.NEXT_PUBLIC_DOMAIN_URL}/api/IT`}
-          >
-            <button className="btn btn-info">
-              <Image className="img-button" src={images.logo} alt="#" />
-              Esign IT& TSC -Viettel (NEW)
-            </button>
-          </a>
-
-          <a
-            target="_blank"
-            href={`${process.env.NEXT_PUBLIC_DOMAIN_URL}/api/CCPC`}
-          >
-            <button className="btn btn-info">
-              <Image className="img-button" src={images.logo} alt="#" />
-              Esign China Continent P&C (NEW)
-            </button>
-          </a>
-          <a
-            target="_blank"
-            href={`${process.env.NEXT_PUBLIC_DOMAIN_URL}/api/sunshine1`}
-          >
-            <button className="btn btn-info">
-              <Image className="img-button" src={images.logo} alt="#" />
-              Esign Sunshine 1 (Update)
-            </button>
-          </a>
-
-          <a
-            target="_blank"
-            href={`${process.env.NEXT_PUBLIC_DOMAIN_URL}/api/CITIC`}
-          >
-            <button className="btn btn-info">
-              <Image className="img-button" src={images.logo} alt="#" />
-              Esign China CITIC
-            </button>
-          </a>
-
-          <a
-            target="_blank"
-            href={`${process.env.NEXT_PUBLIC_DOMAIN_URL}/api/AnBang`}
-          >
-            <button className="btn btn-info">
-              <Image className="img-button" src={images.logo} alt="#" />
-              Esign ANBANG INSURANCE
-            </button>
-          </a>
-
-          <a
-            target="_blank"
-            href={`${process.env.NEXT_PUBLIC_DOMAIN_URL}/api/Chongqing`}
-          >
-            <button className="btn btn-info">
-              <Image className="img-button" src={images.logo} alt="#" />
-              Esign Bank Of Chongqing
-            </button>
-          </a>
-
-          <a
-            target="_blank"
-            href={`${process.env.NEXT_PUBLIC_DOMAIN_URL}/api/Henan`}
-          >
-            <button className="btn btn-info">
-              <Image className="img-button" src={images.logo} alt="#" />
-              Esign Henan Provincial
-            </button>
-          </a>
-
-          <a
-            target="_blank"
-            href={`${process.env.NEXT_PUBLIC_DOMAIN_URL}/api/HDFC`}
-          >
-            <button className="btn btn-info">
-              <Image className="img-button" src={images.logo} alt="#" />
-              Esign HDFC Life
-            </button>
-          </a>
+          {esignLinks.map((link, index) => (
+            <a
+              key={index}
+              target="_blank"
+              href={`${process.env.NEXT_PUBLIC_DOMAIN_URL}${link.href}`}
+            >
+              <button className="btn btn-info">
+                <Image className="img-button" src={images.logo} alt="#" />
+                {link.label}
+              </button>
+            </a>
+          ))}
         </div>
-      </div>
-      {/* Footer */}
-      <div className="footer">
-        <p>By VDP</p>
-        <p>All rights reserved - © 2024</p>
-      </div>
-      {!showModal && (
-        <div onClick={() => setShowModal(!showModal)}>
-          <ModalNotify />
+        {/* Footer */}
+        <div className="footer">
+          <p>By VDP</p>
+          <p>All rights reserved - © 2024</p>
         </div>
-      )}
+        {!showModal && (
+          <div onClick={() => setShowModal(!showModal)}>
+            <ModalNotify />
+          </div>
+        )}
+      </div>
     </div>
   );
 }

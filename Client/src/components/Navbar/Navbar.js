@@ -28,6 +28,7 @@ function Navbar() {
       <Link href="/" className={`navbar-brand navbar-logo `}>
         <Image src={images.signApple} alt="logo" />
       </Link>
+
       <button
         className="navbar-toggler"
         onClick={handleToggle}
