@@ -17,13 +17,13 @@ export default function Home() {
                 <Image
                   src={images.banner}
                   alt="image"
-                  layout="responsive"
+                  fill
                   className="img-banner"
                 />
                 <Image
                   src={images.signApple}
                   alt="image-123"
-                  layout="responsive"
+                  fill
                   className="img-apple"
                 />
                 <p className="price-sale">79.000đ</p>
@@ -42,10 +42,6 @@ export default function Home() {
                     >
                       <circle fill="#be9ddf" cx="25" cy="25" r="3"></circle>
                     </pattern>
-                    <style>
-                      @import url("https://fonts.googleapis.com/css?
-                      family=Lora:400,400i,700,700i");
-                    </style>
                   </defs>
 
                   <text x="50%" y="40%" textAnchor="middle">
@@ -104,13 +100,13 @@ export default function Home() {
                 <Image
                   src={images.banner}
                   alt="image"
-                  layout="responsive"
+                  fill
                   className="img-banner"
                 />
                 <Image
                   src={images.signApple}
                   alt="image"
-                  layout="responsive"
+                  fill
                   className="img-apple"
                 />
                 <p className="price-sale">99.000đ</p>
@@ -129,10 +125,6 @@ export default function Home() {
                     >
                       <circle fill="#be9ddf" cx="25" cy="25" r="3"></circle>
                     </pattern>
-                    <style>
-                      @import url("https://fonts.googleapis.com/css?
-                      family=Lora:400,400i,700,700i");
-                    </style>
                   </defs>
 
                   <text x="50%" y="40%" textAnchor="middle">
@@ -193,13 +185,13 @@ export default function Home() {
                 <Image
                   src={images.banner}
                   alt="image"
-                  layout="responsive"
+                  fill
                   className="img-banner"
                 />
                 <Image
                   src={images.signApple}
                   alt="image"
-                  layout="responsive"
+                  fill
                   className="img-apple"
                 />
                 <p className="price-sale">150.000đ</p>
@@ -218,10 +210,6 @@ export default function Home() {
                     >
                       <circle fill="#be9ddf" cx="25" cy="25" r="3"></circle>
                     </pattern>
-                    <style>
-                      @import url("https://fonts.googleapis.com/css?
-                      family=Lora:400,400i,700,700i");
-                    </style>
                   </defs>
 
                   <text x="50%" y="40%" textAnchor="middle">
