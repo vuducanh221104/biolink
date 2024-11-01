@@ -10,7 +10,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import images from "../../assets";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import Image from "next/image";
-import { ZaloIcon, FaceBookICcon, TelegramIcon } from "../../assets/Icons";
+import {
+  ZaloIcon,
+  FaceBookICcon,
+  TelegramIcon,
+  ImeiIcon,
+} from "../../assets/Icons";
 import ModalNotify from "../../components/ModalNotify";
 import Link from "next/link";
 
@@ -311,16 +316,31 @@ function App() {
             </a>
           ))}
         </div>
-        {/* Footer */}
-        <div className="footer">
-          <p>By VDP</p>
-          <p>All rights reserved - © 2024</p>
-        </div>
-        {!showModal && (
-          <div onClick={() => setShowModal(!showModal)}>
-            <ModalNotify />
+        <div className="install">
+          <div className="install-margin" id="esign-free">
+            <h3>Lấy UDID Máy 📱</h3>
+            <a href={`${process.env.NEXT_PUBLIC_DOMAIN_URL}/api/UUID`}>
+              <button className="btn btn-info uuid">
+                <ImeiIcon className="imei-icon" />
+                GET UDID
+              </button>
+            </a>
           </div>
-        )}
+        </div>
+        <div className="install">
+          <div className="install-margin" id="esign-free">
+            {/* Footer */}
+            <div className="footer">
+              <p>By VDP</p>
+              <p>All rights reserved - © 2024</p>
+            </div>
+            {!showModal && (
+              <div onClick={() => setShowModal(!showModal)}>
+                <ModalNotify />
+              </div>
+            )}
+          </div>
+        </div>
       </div>
     </div>
   );
