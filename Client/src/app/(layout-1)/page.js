@@ -180,7 +180,14 @@ function App() {
       </ul>
       <div className="install">
         <div className="install-margin">
-          <h3 className="buy-cert-text-color">MUA CHỨNG CHỈ 50K</h3>
+          <h3 className="buy-cert-text-color">
+            MUA CHỨNG CHỈ 50K
+            <Image
+              src={images.CertApple}
+              alt="Profile photo"
+              className="cert-apple-home"
+            />
+          </h3>
           <ul className="link-tree">
             <li className="cert-1">
               <Link href="/cert">

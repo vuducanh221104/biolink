@@ -2,6 +2,7 @@ const images = {
   signApple: require("./logoApple.png"),
   logo: require("./avatar.jpg").default,
   banner: require("./BANNER.png").default,
+  CertApple: require("./certapple.png"),
   buyIcon: require("./buy.png"),
   coinMaser: require("./coinMaster.jpg"),
   lienQuan: require("./lq.jpg"),
