@@ -1,96 +1,72 @@
-export const ZaloIcon = ({
-  width = 20,
-  height = 20,
-  className = "",
-  onClick,
-}) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    x="0px"
-    y="0px"
-    width={width}
-    height={width}
-    viewBox="0 0 48 48"
-    className={className}
-  >
-    <path
-      fill="#2962ff"
-      d="M15,36V6.827l-1.211-0.811C8.64,8.083,5,13.112,5,19v10c0,7.732,6.268,14,14,14h10	c4.722,0,8.883-2.348,11.417-5.931V36H15z"
-    ></path>
-    <path
-      fill="#eee"
-      d="M29,5H19c-1.845,0-3.601,0.366-5.214,1.014C10.453,9.25,8,14.528,8,19	c0,6.771,0.936,10.735,3.712,14.607c0.216,0.301,0.357,0.653,0.376,1.022c0.043,0.835-0.129,2.365-1.634,3.742	c-0.162,0.148-0.059,0.419,0.16,0.428c0.942,0.041,2.843-0.014,4.797-0.877c0.557-0.246,1.191-0.203,1.729,0.083	C20.453,39.764,24.333,40,28,40c4.676,0,9.339-1.04,12.417-2.916C42.038,34.799,43,32.014,43,29V19C43,11.268,36.732,5,29,5z"
-    ></path>
-    <path
-      fill="#2962ff"
-      d="M36.75,27C34.683,27,33,25.317,33,23.25s1.683-3.75,3.75-3.75s3.75,1.683,3.75,3.75	S38.817,27,36.75,27z M36.75,21c-1.24,0-2.25,1.01-2.25,2.25s1.01,2.25,2.25,2.25S39,24.49,39,23.25S37.99,21,36.75,21z"
-    ></path>
-    <path
-      fill="#2962ff"
-      d="M31.5,27h-1c-0.276,0-0.5-0.224-0.5-0.5V18h1.5V27z"
-    ></path>
-    <path
-      fill="#2962ff"
-      d="M27,19.75v0.519c-0.629-0.476-1.403-0.769-2.25-0.769c-2.067,0-3.75,1.683-3.75,3.75	S22.683,27,24.75,27c0.847,0,1.621-0.293,2.25-0.769V26.5c0,0.276,0.224,0.5,0.5,0.5h1v-7.25H27z M24.75,25.5	c-1.24,0-2.25-1.01-2.25-2.25S23.51,21,24.75,21S27,22.01,27,23.25S25.99,25.5,24.75,25.5z"
-    ></path>
-    <path
-      fill="#2962ff"
-      d="M21.25,18h-8v1.5h5.321L13,26h0.026c-0.163,0.211-0.276,0.463-0.276,0.75V27h7.5	c0.276,0,0.5-0.224,0.5-0.5v-1h-5.321L21,19h-0.026c0.163-0.211,0.276-0.463,0.276-0.75V18z"
-    ></path>
-  </svg>
+export const ZaloIcon = ({ width = 20, height = 20, className = '', onClick }) => (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        x="0px"
+        y="0px"
+        width={width}
+        height={width}
+        viewBox="0 0 48 48"
+        className={className}
+    >
+        <path
+            fill="#2962ff"
+            d="M15,36V6.827l-1.211-0.811C8.64,8.083,5,13.112,5,19v10c0,7.732,6.268,14,14,14h10	c4.722,0,8.883-2.348,11.417-5.931V36H15z"
+        ></path>
+        <path
+            fill="#eee"
+            d="M29,5H19c-1.845,0-3.601,0.366-5.214,1.014C10.453,9.25,8,14.528,8,19	c0,6.771,0.936,10.735,3.712,14.607c0.216,0.301,0.357,0.653,0.376,1.022c0.043,0.835-0.129,2.365-1.634,3.742	c-0.162,0.148-0.059,0.419,0.16,0.428c0.942,0.041,2.843-0.014,4.797-0.877c0.557-0.246,1.191-0.203,1.729,0.083	C20.453,39.764,24.333,40,28,40c4.676,0,9.339-1.04,12.417-2.916C42.038,34.799,43,32.014,43,29V19C43,11.268,36.732,5,29,5z"
+        ></path>
+        <path
+            fill="#2962ff"
+            d="M36.75,27C34.683,27,33,25.317,33,23.25s1.683-3.75,3.75-3.75s3.75,1.683,3.75,3.75	S38.817,27,36.75,27z M36.75,21c-1.24,0-2.25,1.01-2.25,2.25s1.01,2.25,2.25,2.25S39,24.49,39,23.25S37.99,21,36.75,21z"
+        ></path>
+        <path fill="#2962ff" d="M31.5,27h-1c-0.276,0-0.5-0.224-0.5-0.5V18h1.5V27z"></path>
+        <path
+            fill="#2962ff"
+            d="M27,19.75v0.519c-0.629-0.476-1.403-0.769-2.25-0.769c-2.067,0-3.75,1.683-3.75,3.75	S22.683,27,24.75,27c0.847,0,1.621-0.293,2.25-0.769V26.5c0,0.276,0.224,0.5,0.5,0.5h1v-7.25H27z M24.75,25.5	c-1.24,0-2.25-1.01-2.25-2.25S23.51,21,24.75,21S27,22.01,27,23.25S25.99,25.5,24.75,25.5z"
+        ></path>
+        <path
+            fill="#2962ff"
+            d="M21.25,18h-8v1.5h5.321L13,26h0.026c-0.163,0.211-0.276,0.463-0.276,0.75V27h7.5	c0.276,0,0.5-0.224,0.5-0.5v-1h-5.321L21,19h-0.026c0.163-0.211,0.276-0.463,0.276-0.75V18z"
+        ></path>
+    </svg>
 );
 
-export const FaceBookICcon = ({
-  width = 20,
-  height = 20,
-  className = "",
-  onClick,
-}) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    x="0px"
-    y="0px"
-    width="18"
-    height="18"
-    viewBox="0 0 48 48"
-    className={className}
-  >
-    <path
-      fill="#3F51B5"
-      d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z"
-    ></path>
-    <path
-      fill="#FFF"
-      d="M34.368,25H31v13h-5V25h-3v-4h3v-2.41c0.002-3.508,1.459-5.59,5.592-5.59H35v4h-2.287C31.104,17,31,17.6,31,18.723V21h4L34.368,25z"
-    ></path>
-  </svg>
-);
-export const PhonneIcon = ({
-  width = 20,
-  height = 20,
-  className = "",
-  onClick,
-}) => (
-  <svg
-    width={width}
-    height={height}
-    viewBox="0 0 53.943 53.943"
-    className={className}
-    onClick={onClick}
-  >
-    <g>
-      <g>
+export const FaceBookICcon = ({ width = 20, height = 20, className = '', onClick }) => (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        x="0px"
+        y="0px"
+        width="18"
+        height="18"
+        viewBox="0 0 48 48"
+        className={className}
+    >
         <path
-          style={{ fill: "#69BC45" }}
-          d="M52.48,41.376c-1.898-3.587-8.899-7.69-8.899-7.69c-1.584-0.903-3.495-1.004-4.399,0.606
+            fill="#3F51B5"
+            d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z"
+        ></path>
+        <path
+            fill="#FFF"
+            d="M34.368,25H31v13h-5V25h-3v-4h3v-2.41c0.002-3.508,1.459-5.59,5.592-5.59H35v4h-2.287C31.104,17,31,17.6,31,18.723V21h4L34.368,25z"
+        ></path>
+    </svg>
+);
+export const PhonneIcon = ({ width = 20, height = 20, className = '', onClick }) => (
+    <svg width={width} height={height} viewBox="0 0 53.943 53.943" className={className} onClick={onClick}>
+        <g>
+            <g>
+                <path
+                    style={{ fill: '#69BC45' }}
+                    d="M52.48,41.376c-1.898-3.587-8.899-7.69-8.899-7.69c-1.584-0.903-3.495-1.004-4.399,0.606
           c0,0-2.274,2.728-2.853,3.12c-2.643,1.791-5.091,1.722-7.562-0.75l-5.743-5.743l-5.743-5.743c-2.472-2.472-2.541-4.919-0.75-7.562
           c0.392-0.579,3.12-2.853,3.12-2.853c1.609-0.904,1.509-2.815,0.606-4.399c0,0-4.103-7.001-7.69-8.899
           c-1.526-0.808-3.4-0.526-4.621,0.695L5.408,4.693c-8.045,8.045-4.084,17.129,3.961,25.174l7.353,7.353l7.353,7.353
           c8.045,8.045,17.129,12.007,25.174,3.961l2.537-2.537C53.006,44.776,53.288,42.901,52.48,41.376z"
-        />
-        <path
-          style={{ fill: "#449E46" }}
-          d="M53.364,40.908c-2.008-3.796-8.981-7.912-9.287-8.092c-0.896-0.51-1.831-0.78-2.706-0.78
+                />
+                <path
+                    style={{ fill: '#449E46' }}
+                    d="M53.364,40.908c-2.008-3.796-8.981-7.912-9.287-8.092c-0.896-0.51-1.831-0.78-2.706-0.78
           c-1.301,0-2.366,0.596-3.011,1.68c-1.02,1.22-2.286,2.646-2.592,2.867c-2.376,1.612-4.237,1.429-6.294-0.629L17.987,24.467
           c-2.044-2.045-2.232-3.928-0.632-6.29c0.224-0.31,1.65-1.575,2.871-2.597c0.778-0.463,1.312-1.15,1.545-1.995
           c0.312-1.122,0.082-2.444-0.652-3.731c-0.173-0.296-4.29-7.27-8.085-9.277c-0.708-0.375-1.506-0.573-2.306-0.573
@@ -107,161 +83,143 @@ export const PhonneIcon = ({
           c-2.112-0.219-3.983-0.838-5.543-1.556c0.762-0.231,1.538-0.614,2.328-1.149c0.628-0.425,2.35-2.455,3.061-3.308l0.104-0.151
           c0.281-0.5,0.712-0.744,1.317-0.744c0.52,0,1.129,0.185,1.705,0.512c1.879,1.102,7.072,4.559,8.521,7.296
           C52.202,42.989,51.994,44.374,51.078,45.29z"
-        />
-      </g>
-      <g>
-        <rect
-          x="1.943"
-          y="29.939"
-          style={{ fill: "#48A0DC" }}
-          width="22"
-          height="22"
-        />
-        <rect
-          x="11.943"
-          y="35.939"
-          style={{ fill: "#FFFFFF" }}
-          width="2"
-          height="16"
-        />
-        <polygon
-          style={{ fill: "#FFFFFF" }}
-          points="18.236,42.646 12.943,37.353 7.65,42.646 6.236,41.232 12.943,34.525 19.65,41.232"
-        />
-      </g>
-    </g>
-  </svg>
+                />
+            </g>
+            <g>
+                <rect x="1.943" y="29.939" style={{ fill: '#48A0DC' }} width="22" height="22" />
+                <rect x="11.943" y="35.939" style={{ fill: '#FFFFFF' }} width="2" height="16" />
+                <polygon
+                    style={{ fill: '#FFFFFF' }}
+                    points="18.236,42.646 12.943,37.353 7.65,42.646 6.236,41.232 12.943,34.525 19.65,41.232"
+                />
+            </g>
+        </g>
+    </svg>
 );
 
-export const CartIcon = ({
-  width = 20,
-  height = 20,
-  className = "",
-  onClick,
-}) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 576 512"
-    width={width}
-    height={height}
-    className={className}
-    onClick={onClick}
-  >
-    <path d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
-  </svg>
-);
-
-export const NavBarIcon = ({
-  width = 20,
-  height = 20,
-  className = "",
-  onClick,
-}) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    x="0px"
-    y="0px"
-    viewBox="0 0 48 48"
-    width={width}
-    height={height}
-    className={className}
-    onClick={onClick}
-  >
-    <linearGradient
-      id="9iHXMuvV7brSX7hFt~tsna_Rdp3AydLFY2A_gr1"
-      x1="12.066"
-      x2="34.891"
-      y1=".066"
-      y2="22.891"
-      gradientUnits="userSpaceOnUse"
+export const CartIcon = ({ width = 20, height = 20, className = '', onClick }) => (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 576 512"
+        width={width}
+        height={height}
+        className={className}
+        onClick={onClick}
     >
-      <stop offset=".237" stopColor="#3bc9f3"></stop>
-      <stop offset=".85" stopColor="#1591d8"></stop>
-    </linearGradient>
-    <path
-      fill="url(#9iHXMuvV7brSX7hFt~tsna_Rdp3AydLFY2A_gr1)"
-      d="M43,15H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,14.1,44.1,15,43,15z"
-    ></path>
-    <linearGradient
-      id="9iHXMuvV7brSX7hFt~tsnb_Rdp3AydLFY2A_gr2"
-      x1="12.066"
-      x2="34.891"
-      y1="12.066"
-      y2="34.891"
-      gradientUnits="userSpaceOnUse"
-    >
-      <stop offset=".237" stopColor="#3bc9f3"></stop>
-      <stop offset=".85" stopColor="#1591d8"></stop>
-    </linearGradient>
-    <path
-      fill="url(#9iHXMuvV7brSX7hFt~tsnb_Rdp3AydLFY2A_gr2)"
-      d="M43,27H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,26.1,44.1,27,43,27z"
-    ></path>
-    <linearGradient
-      id="9iHXMuvV7brSX7hFt~tsnc_Rdp3AydLFY2A_gr3"
-      x1="12.066"
-      x2="34.891"
-      y1="24.066"
-      y2="46.891"
-      gradientUnits="userSpaceOnUse"
-    >
-      <stop offset=".237" stopColor="#3bc9f3"></stop>
-      <stop offset=".85" stopColor="#1591d8"></stop>
-    </linearGradient>
-    <path
-      fill="url(#9iHXMuvV7brSX7hFt~tsnc_Rdp3AydLFY2A_gr3)"
-      d="M43,39H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,38.1,44.1,39,43,39z"
-    ></path>
-  </svg>
+        <path d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
+    </svg>
 );
 
-export const TelegramIcon = ({
-  width = 20,
-  height = 20,
-  className = "",
-  onClick,
-}) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    x="0px"
-    y="0px"
-    viewBox="0 0 48 48"
-    width={width}
-    height={height}
-    className={className}
-    onClick={onClick}
-  >
-    <path fill="#29b6f6" d="M24 4A20 20 0 1 0 24 44A20 20 0 1 0 24 4Z"></path>
-    <path
-      fill="#fff"
-      d="M33.95,15l-3.746,19.126c0,0-0.161,0.874-1.245,0.874c-0.576,0-0.873-0.274-0.873-0.274l-8.114-6.733 l-3.97-2.001l-5.095-1.355c0,0-0.907-0.262-0.907-1.012c0-0.625,0.933-0.923,0.933-0.923l21.316-8.468 c-0.001-0.001,0.651-0.235,1.126-0.234C33.667,14,34,14.125,34,14.5C34,14.75,33.95,15,33.95,15z"
-    ></path>
-    <path
-      fill="#b0bec5"
-      d="M23,30.505l-3.426,3.374c0,0-0.149,0.115-0.348,0.12c-0.069,0.002-0.143-0.009-0.219-0.043 l0.964-5.965L23,30.505z"
-    ></path>
-    <path
-      fill="#cfd8dc"
-      d="M29.897,18.196c-0.169-0.22-0.481-0.26-0.701-0.093L16,26c0,0,2.106,5.892,2.427,6.912 c0.322,1.021,0.58,1.045,0.58,1.045l0.964-5.965l9.832-9.096C30.023,18.729,30.064,18.416,29.897,18.196z"
-    ></path>
-  </svg>
+export const NavBarIcon = ({ width = 20, height = 20, className = '', onClick }) => (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        x="0px"
+        y="0px"
+        viewBox="0 0 48 48"
+        width={width}
+        height={height}
+        className={className}
+        onClick={onClick}
+    >
+        <linearGradient
+            id="9iHXMuvV7brSX7hFt~tsna_Rdp3AydLFY2A_gr1"
+            x1="12.066"
+            x2="34.891"
+            y1=".066"
+            y2="22.891"
+            gradientUnits="userSpaceOnUse"
+        >
+            <stop offset=".237" stopColor="#3bc9f3"></stop>
+            <stop offset=".85" stopColor="#1591d8"></stop>
+        </linearGradient>
+        <path
+            fill="url(#9iHXMuvV7brSX7hFt~tsna_Rdp3AydLFY2A_gr1)"
+            d="M43,15H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,14.1,44.1,15,43,15z"
+        ></path>
+        <linearGradient
+            id="9iHXMuvV7brSX7hFt~tsnb_Rdp3AydLFY2A_gr2"
+            x1="12.066"
+            x2="34.891"
+            y1="12.066"
+            y2="34.891"
+            gradientUnits="userSpaceOnUse"
+        >
+            <stop offset=".237" stopColor="#3bc9f3"></stop>
+            <stop offset=".85" stopColor="#1591d8"></stop>
+        </linearGradient>
+        <path
+            fill="url(#9iHXMuvV7brSX7hFt~tsnb_Rdp3AydLFY2A_gr2)"
+            d="M43,27H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,26.1,44.1,27,43,27z"
+        ></path>
+        <linearGradient
+            id="9iHXMuvV7brSX7hFt~tsnc_Rdp3AydLFY2A_gr3"
+            x1="12.066"
+            x2="34.891"
+            y1="24.066"
+            y2="46.891"
+            gradientUnits="userSpaceOnUse"
+        >
+            <stop offset=".237" stopColor="#3bc9f3"></stop>
+            <stop offset=".85" stopColor="#1591d8"></stop>
+        </linearGradient>
+        <path
+            fill="url(#9iHXMuvV7brSX7hFt~tsnc_Rdp3AydLFY2A_gr3)"
+            d="M43,39H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,38.1,44.1,39,43,39z"
+        ></path>
+    </svg>
 );
 
-export const ImeiIcon = ({
-  width = 20,
-  height = 20,
-  className = "",
-  onClick,
-}) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 122.88 91.17"
-    width={width}
-    height={height}
-    className={className}
-    onClick={onClick}
-  >
-    <title>imei</title>
-    <path d="M35,0H46.66V53.6H35V0ZM21.56,63.62h7.72V91.17H21.56V63.62Zm13.74,0H45.46l3.87,16.76,3.88-16.76H63.32V91.17H57v-21l-4.86,21H46.45l-4.85-21v21H35.3V63.62Zm33.5,0H89.41v5.89H76.53v4.38H88.47v5.62H76.53v5.43H89.79v6.23h-21V63.62Zm26,0h7.73V91.17H94.83V63.62ZM0,0H11.66V91.17H0V0ZM72.69,0H81V53.6H72.69V0ZM56.56,0H62.8V53.6H56.56V0Zm-35,0H25.1V53.6H21.56V0Zm90.92,0h10.4V91.17h-10.4V0ZM90.92,0h11.66V53.6H90.92V0Z" />
-  </svg>
+export const TelegramIcon = ({ width = 20, height = 20, className = '', onClick }) => (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        x="0px"
+        y="0px"
+        viewBox="0 0 48 48"
+        width={width}
+        height={height}
+        className={className}
+        onClick={onClick}
+    >
+        <path fill="#29b6f6" d="M24 4A20 20 0 1 0 24 44A20 20 0 1 0 24 4Z"></path>
+        <path
+            fill="#fff"
+            d="M33.95,15l-3.746,19.126c0,0-0.161,0.874-1.245,0.874c-0.576,0-0.873-0.274-0.873-0.274l-8.114-6.733 l-3.97-2.001l-5.095-1.355c0,0-0.907-0.262-0.907-1.012c0-0.625,0.933-0.923,0.933-0.923l21.316-8.468 c-0.001-0.001,0.651-0.235,1.126-0.234C33.667,14,34,14.125,34,14.5C34,14.75,33.95,15,33.95,15z"
+        ></path>
+        <path
+            fill="#b0bec5"
+            d="M23,30.505l-3.426,3.374c0,0-0.149,0.115-0.348,0.12c-0.069,0.002-0.143-0.009-0.219-0.043 l0.964-5.965L23,30.505z"
+        ></path>
+        <path
+            fill="#cfd8dc"
+            d="M29.897,18.196c-0.169-0.22-0.481-0.26-0.701-0.093L16,26c0,0,2.106,5.892,2.427,6.912 c0.322,1.021,0.58,1.045,0.58,1.045l0.964-5.965l9.832-9.096C30.023,18.729,30.064,18.416,29.897,18.196z"
+        ></path>
+    </svg>
+);
+
+export const ImeiIcon = ({ width = 20, height = 20, className = '', onClick }) => (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 122.88 91.17"
+        width={width}
+        height={height}
+        className={className}
+        onClick={onClick}
+    >
+        <title>imei</title>
+        <path d="M35,0H46.66V53.6H35V0ZM21.56,63.62h7.72V91.17H21.56V63.62Zm13.74,0H45.46l3.87,16.76,3.88-16.76H63.32V91.17H57v-21l-4.86,21H46.45l-4.85-21v21H35.3V63.62Zm33.5,0H89.41v5.89H76.53v4.38H88.47v5.62H76.53v5.43H89.79v6.23h-21V63.62Zm26,0h7.73V91.17H94.83V63.62ZM0,0H11.66V91.17H0V0ZM72.69,0H81V53.6H72.69V0ZM56.56,0H62.8V53.6H56.56V0Zm-35,0H25.1V53.6H21.56V0Zm90.92,0h10.4V91.17h-10.4V0ZM90.92,0h11.66V53.6H90.92V0Z" />
+    </svg>
+);
+
+export const ChervonDonwIcon = ({ width = '2.4rem', height = '2.4rem', className, style }) => (
+    <svg
+        className={className}
+        width={width}
+        height={height}
+        style={style}
+        viewBox="0 0 12 8"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path stroke="currentColor" strokeWidth="2" d="M10 2L6 6 2 2" strokeLinecap="square"></path>
+    </svg>
 );

@@ -1,450 +1,431 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 body {
-  text-align: center;
-  font-family: Georgia, serif;
-  background: url("https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif");
+    text-align: center;
+    font-family: Georgia, serif;
+    background: url('https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif');
 }
+
 .cert-1 {
-  & a {
-    & i {
-      color: #0608ff !important;
-      font-size: 15px;
+    & a {
+        & i {
+            color: #0608ff !important;
+            font-size: 15px;
+        }
     }
-  }
 }
 .cert-2 {
-  & a {
-    & i {
-      color: #0608ff !important;
-      font-size: 15px;
+    & a {
+        & i {
+            color: #0608ff !important;
+            font-size: 15px;
+        }
     }
-  }
 }
 .buy-cert-text-color {
-  color: #05ff00 !important;
+    color: #05ff00 !important;
 }
 .apple-icon {
-  margin-top: 5px;
-  color: red;
-  font-size: 20px;
-  margin-right: 5px;
+    margin-top: 5px;
+    color: red;
+    font-size: 20px;
+    margin-right: 5px;
 }
 
 button {
-  font-size: 13px !important;
-  color: #ffffff !important;
-  text-shadow: -1px 0 5px CYAN, 0 1px 5px RED, 1px 0 5px CYAN, 0 -1px 5px RED;
+    font-size: 13px !important;
+    color: #ffffff !important;
+    text-shadow: -1px 0 5px CYAN, 0 1px 5px RED, 1px 0 5px CYAN, 0 -1px 5px RED;
 }
 
 h1,
 p {
-  color: #ffffff !important;
-  text-align: center;
-  text-shadow: 15px 4px 20px #f35d06;
+    color: #ffffff !important;
+    text-align: center;
+    text-shadow: 15px 4px 20px #f35d06;
 }
 
 p {
-  font-size: 18px;
-  text-shadow: 3px 0 8px white;
+    font-size: 18px;
+    text-shadow: 3px 0 8px white;
 }
 .margin-top {
-  margin-top: 40px;
+    margin-top: 40px;
 }
 
 .text-large {
-  font-size: 20px !important;
+    font-size: 20px !important;
 }
 .text-custom {
-  font-size: 10px;
-  text-shadow: 8px 0 8px white;
+    font-size: 10px;
+    text-shadow: 8px 0 8px white;
 }
 
 .link-tree {
-  & i::before {
-    margin-right: 3px !important;
-  }
+    & i::before {
+        margin-right: 3px !important;
+    }
 }
 
 .imei-icon {
-  margin-right: 10px;
-  color: #ffffff;
+    margin-right: 10px;
+    color: #ffffff;
 }
 .cert-apple-home {
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  margin-bottom: 4px;
-  margin-left: 10px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 4px;
+    margin-left: 10px;
 }
 .btn.btn-info.uuid {
-  background-color: #8e53eb;
-  font-weight: 600;
+    background-color: #8e53eb;
+    font-weight: 600;
 }
 .image-thumb {
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  margin-right: 3px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-right: 3px;
 }
 .img-contain {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: -75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -75px;
 }
 
 .img-button {
-  height: 24px;
-  width: 24px;
-  border-radius: 50%;
-  margin-right: 10px;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
 .profile-photo {
-  text-align: center;
-  background: black;
-  border-radius: 50%;
-  height: 350px;
-  width: 350px;
-  object-fit: cover;
-  box-shadow: 0 1px 13px lime;
-  transform: scale(0.5);
-  animation: pulse 2s infinite;
-  transition: all 0.4s ease-in-out;
-  animation: zoomInOut 2s infinite;
+    text-align: center;
+    background: black;
+    border-radius: 50%;
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+    box-shadow: 0 1px 13px lime;
+    transform: scale(0.5);
+    animation: pulse 2s infinite;
+    transition: all 0.4s ease-in-out;
+    animation: zoomInOut 2s infinite;
 }
 
 @keyframes zoomInOut {
-  0% {
-    transform: scale(0.4); /* Kích thước ban đầu */
-  }
-  50% {
-    transform: scale(0.3); /* Thu nhỏ ảnh */
-  }
-  100% {
-    transform: scale(0.4); /* Phóng to về kích thước ban đầu */
-  }
+    0% {
+        transform: scale(0.4); /* Kích thước ban đầu */
+    }
+    50% {
+        transform: scale(0.3); /* Thu nhỏ ảnh */
+    }
+    100% {
+        transform: scale(0.4); /* Phóng to về kích thước ban đầu */
+    }
 }
 
 .link-tree {
-  list-style: none;
-  padding: 0;
-  font-size: 16px;
-  margin-bottom: 50px;
-  text-align: center;
-  & a {
-    border: 2px solid #ffffff;
-    color: #ffffff;
-    text-shadow: -1px 0 5px CYAN, 0 1px 5px RED, 1px 0 5px CYAN, 0 -1px 5px RED;
-  }
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+    margin-bottom: 50px;
+    text-align: center;
+    & a {
+        border: 2px solid #ffffff;
+        color: #ffffff;
+        text-shadow: -1px 0 5px CYAN, 0 1px 5px RED, 1px 0 5px CYAN, 0 -1px 5px RED;
+    }
 }
 
 .link-tree > li {
-  margin: 12px 0;
+    margin: 12px 0;
 }
 
 .link-tree > li a {
-  color: #ffffff !important;
-  font-weight: 700;
-  font-size: 14px;
-  background: #c7dbe6;
-  border-radius: 6px;
-  padding: 8px;
-  text-decoration: none;
-  max-width: 280px;
-  width: 90%;
-  display: block;
-  margin: 0 auto;
+    color: #ffffff !important;
+    font-weight: 700;
+    font-size: 14px;
+    background: #c7dbe6;
+    border-radius: 6px;
+    padding: 8px;
+    text-decoration: none;
+    max-width: 280px;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
 }
 
 .link-tree > li:nth-child(1) a {
-  background: #17a2b8;
+    background: #17a2b8;
 }
 
 .link-tree > li:nth-child(2) a {
-  background: #9cc0d3;
+    background: #9cc0d3;
 }
 
 .link-tree > li:nth-child(3) a {
-  background: green;
+    background: green;
 }
 
 .link-tree > li:nth-child(4) a {
-  background: #4d88a8;
+    background: #4d88a8;
 }
 
 .link-tree > li a:hover {
-  background: #2d4f62;
+    background: #2d4f62;
 }
 
 /* install */
 @keyframes borderAnimation {
-  0% {
-    border-color: #006600;
-  }
-  25% {
-    border-color: #660099;
-  }
-  50% {
-    border-color: #339999;
-  }
-  75% {
-    border-color: #9999ff;
-  }
-  100% {
-    border-color: #ff0099;
-  }
+    0% {
+        border-color: #006600;
+    }
+    25% {
+        border-color: #660099;
+    }
+    50% {
+        border-color: #339999;
+    }
+    75% {
+        border-color: #9999ff;
+    }
+    100% {
+        border-color: #ff0099;
+    }
 }
 .install {
-  text-align: center;
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-  animation: borderAnimation 4s linear infinite;
-
-  .install-margin {
-    margin: 30px 0;
-    a {
-      display: block;
-      margin-top: 20px;
-    }
-
-    p {
-      text-decoration: underline;
-      padding: 20px;
-    }
-  }
-
-  button {
     text-align: center;
-    padding: 10px 0;
-    border: 2px solid #ffffff;
-    :hover {
-      opacity: 0.9;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    animation: borderAnimation 4s linear infinite;
+
+    .install-margin {
+        margin: 30px 0;
+        a {
+            display: block;
+            margin-top: 20px;
+        }
+
+        p {
+            text-decoration: underline;
+            padding: 20px;
+        }
     }
 
-    i {
-      color: white;
-      font-size: 16px;
-      margin-right: 6px;
+    button {
+        text-align: center;
+        padding: 10px 0;
+        border: 2px solid #ffffff;
+        :hover {
+            opacity: 0.9;
+        }
+
+        i {
+            color: white;
+            font-size: 16px;
+            margin-right: 6px;
+        }
     }
-  }
 }
 
 .install-margin h3 {
-  color: white;
-  text-decoration: underline;
-  text-shadow: 3px 0 8px white;
+    color: white;
+    text-decoration: underline;
+    text-shadow: 3px 0 8px white;
 }
 
 .install-margin button {
-  width: 34%;
+    width: 34%;
 }
 
 .install-margin button a {
-  color: white;
-  text-decoration: none;
-  font-size: 13px;
-  text-shadow: -1px 0 5px CYAN, 0 1px 5px RED, 1px 0 5px CYAN, 0 -1px 5px RED;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    text-shadow: -1px 0 5px CYAN, 0 1px 5px RED, 1px 0 5px CYAN, 0 -1px 5px RED;
 }
 
 /* footer */
 .footer {
-  margin: 20px 0;
+    margin: 20px 0;
 }
 
 .footer p {
-  font-size: 16px;
-  font-weight: 600;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 /* animation text */
 .animated-text {
-  font-size: 2em;
-  color: #ffffff;
-  text-decoration: underline;
-  text-shadow: 1px 9px 9px #9999ff;
-  font-style: italic;
-  text-align: center;
-  opacity: 0; /* Bắt đầu ẩn */
-  transform: scale(0); /* Thu nhỏ lại khi bắt đầu */
-  animation: fadeInOut 4s ease-in-out infinite; /* Hiệu ứng lặp vô hạn */
+    font-size: 2em;
+    color: #ffffff;
+    text-decoration: underline;
+    text-shadow: 1px 9px 9px #9999ff;
+    font-style: italic;
+    text-align: center;
+    opacity: 0; /* Bắt đầu ẩn */
+    transform: scale(0); /* Thu nhỏ lại khi bắt đầu */
+    animation: fadeInOut 4s ease-in-out infinite; /* Hiệu ứng lặp vô hạn */
 }
 
 @keyframes fadeInOut {
-  0%,
-  100% {
-    opacity: 0;
-    transform: scale(0); /* Thu nhỏ lại */
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1); /* Hiện ra đầy đủ */
-  }
+    0%,
+    100% {
+        opacity: 0;
+        transform: scale(0); /* Thu nhỏ lại */
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1); /* Hiện ra đầy đủ */
+    }
 }
 
 /* Thiết kế cơ bản cho trình phát nhạc */
 audio {
-  width: 300px;
-  margin-top: 20px;
-  display: block;
+    width: 300px;
+    margin-top: 20px;
+    display: block;
 }
 
 #backgroundMusic {
-  display: block; /* Hiển thị trình phát */
+    display: block; /* Hiển thị trình phát */
 }
 
 @media (max-width: 800px) {
-  .install {
-    button {
-      width: 80%;
+    .install {
+        button {
+            width: 80%;
+        }
     }
-  }
 }
 //WATER TEXT
 .wrapper-heading {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
 }
 .content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
 }
 
 .content h2 {
-  color: #fff;
-  font-size: 40px;
-  position: absolute;
+    color: #fff;
+    font-size: 40px;
+    position: absolute;
 }
 
 .content h2:nth-child(1) {
-  color: transparent;
-  -webkit-text-stroke: 2px #8338ec;
+    color: transparent;
+    -webkit-text-stroke: 2px #8338ec;
 }
 
 .content h2:nth-child(2) {
-  color: #c19bf5;
-  animation: animate 1s ease-in-out infinite;
+    color: #c19bf5;
+    animation: animate 1s ease-in-out infinite;
 }
 
 @keyframes animate {
-  0%,
-  100% {
-    clip-path: polygon(
-      0% 45%,
-      16% 44%,
-      33% 50%,
-      54% 60%,
-      70% 61%,
-      84% 59%,
-      100% 52%,
-      100% 100%,
-      0% 100%
-    );
-  }
+    0%,
+    100% {
+        clip-path: polygon(0% 45%, 16% 44%, 33% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+    }
 
-  50% {
-    clip-path: polygon(
-      0% 60%,
-      15% 65%,
-      34% 66%,
-      51% 62%,
-      67% 50%,
-      84% 45%,
-      100% 46%,
-      100% 100%,
-      0% 100%
-    );
-  }
+    50% {
+        clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+    }
 }
 
 //notificaton
 
 @keyframes slide-in {
-  from {
-    transform: translateX(100%); // Start from right
-    opacity: 0; // Start transparent
-  }
-  to {
-    transform: translateX(0); // Move to original position
-    opacity: 1; // Fully visible
-  }
+    from {
+        transform: translateX(100%); // Start from right
+        opacity: 0; // Start transparent
+    }
+    to {
+        transform: translateX(0); // Move to original position
+        opacity: 1; // Fully visible
+    }
 }
 
 @keyframes slide-out {
-  from {
-    transform: translateX(0); // Start at original position
-    opacity: 1; // Fully visible
-  }
-  to {
-    transform: translateX(100%); // Move out to the right
-    opacity: 0; // Fully transparent
-  }
+    from {
+        transform: translateX(0); // Start at original position
+        opacity: 1; // Fully visible
+    }
+    to {
+        transform: translateX(100%); // Move out to the right
+        opacity: 0; // Fully transparent
+    }
 }
 
 .notification {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background-color: #4caf50; // Green
-  color: white;
-  padding: 15px;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: opacity 0.3s ease;
-  animation: slide-in 0.3s forwards; // Slide-in animation
-
-  &.slide-out {
-    animation: slide-out 0.3s forwards; // Slide-out animation
-  }
-
-  p {
-    margin: 0;
-  }
-
-  .closeButton {
-    background: none;
-    border: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4caf50; // Green
     color: white;
-    cursor: pointer;
-    font-weight: bold;
-    margin-left: 10px;
-  }
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease;
+    animation: slide-in 0.3s forwards; // Slide-in animation
+
+    &.slide-out {
+        animation: slide-out 0.3s forwards; // Slide-out animation
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .closeButton {
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+        margin-left: 10px;
+    }
 }
 
 //
 /* styles/Notification.css */
 .notification-container {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 1000;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
 }
 
 .notification {
-  background-color: #f0f2f5;
-  border: 1px solid #d9d9d9;
-  border-radius: 4px;
-  padding: 10px;
-  margin-bottom: 10px;
-  animation: slide-in 0.3s ease-out;
+    background-color: #f0f2f5;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    animation: slide-in 0.3s ease-out;
 }
 
 @keyframes slide-in {
-  from {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }

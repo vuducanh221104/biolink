@@ -1,0 +1,94 @@
+{
+    "navBar": {
+        "menu1": "Buy Apple Certificate",
+        "menu2": "Free Esgin Certificate",
+        "menu3": "Trust Check Group",
+        "menu4": "Contact"
+    },
+    "home": {
+        "facebook": "Facebook (Admin 1)",
+        "facebook2": "Facebook (Admin 2)",
+        "phone": "Zalo Admin",
+        "boxZalo": "Zalo Chat Box",
+        "boxTele": "Telegram Chat Box",
+
+        "buyCert": "BUY CERTIFICATE $2 USD",
+        "buyCert1": "View Apple Certificate Packages",
+        "buyCert2": "Trusted Check Group",
+
+        "reviewBuy": "If you need to buy a certificate (Esign | Gbox | Scarlet) for only $2 USD, feel free to inbox me above.",
+
+        "dns": "Install DNS",
+
+        "install": "Install",
+
+        "fileCert": "Certificate File (Esgin Cert)",
+
+        "ipaGameTitle": "Signed IPA ✅",
+
+        "esginFree": "Esign Free ✅",
+
+        "getUUID": "Retrieve Device UDID  📱",
+        "getUUID2": "GET UDID"
+    },
+    "notification": {
+        "welcome1": "NOTICE !!",
+        "welcome2": "Welcome to Dinhhavn ✅"
+    },
+
+    "cert": {
+        "only": "Only Left:",
+        "buyNow": "Buy Now",
+        "package1": {
+            "saleHeader": "SALE 20%",
+            "priceOrignal": "$4 USD",
+            "priceDiscount": "$2.08 USD",
+            "mess1": "🚀 Special package activates within 72 hours!",
+            "mess2": "📱 Supports 𝑰𝑶𝑺 𝟏𝟔-𝟏𝟖 𝒊𝑷𝒉𝒐𝒏𝒆 𝒗𝒔 𝒊𝑷𝒂𝒅",
+            "mess3": "🕒 Valid for 𝟑𝟔𝟓 days",
+            "mess4": "🔐 IPA signing and app cloning",
+            "mess5": "🗓️ 𝟏-𝒚𝒆𝒂𝒓 validity",
+            "mess6": "🔧 𝟏𝟎𝟎-𝒅𝒂𝒚  warranty",
+            "mess7": "🌈 𝑨𝒄𝒄𝒆𝒔𝒔 𝒕𝒐 𝑮𝒂𝒎𝒆 𝑽𝒂𝒖𝒍𝒕 of up to 𝟏,𝟎𝟎𝟎 𝑯𝒂𝒄𝒌𝒆𝒅 𝑨𝒑𝒑𝒔",
+            "mess8": "Not supported on Blacklisted, Apple-Banned, or Bypass devices"
+        },
+        "package2": {
+            "saleHeader": "SALE 20%",
+            "priceOrignal": "$5 USD",
+            "priceDiscount": "$3.33 USD",
+            "mess1": "🚀 Certificate issued within 72 hours!",
+            "mess2": "🕒 Valid for up to 𝟑𝟔𝟓 days",
+            "mess3": "📱 Supports 𝑰𝑶𝑺 𝟏𝟔-𝟏𝟖 𝒊𝑷𝒉𝒐𝒏𝒆 𝒗𝒔 𝒊𝑷𝒂𝒅",
+            "mess4": "🔐 𝑼𝒏𝒍𝒊𝒎𝒊𝒕𝒆𝒅 IPA signing",
+            "mess5": "🔄 𝑬𝒂𝒔𝒚 𝒂𝒑𝒑 𝒄𝒍𝒐𝒏𝒊𝒏𝒈",
+            "mess6": "🛠️ 𝟏𝟓𝟎-𝒅𝒂𝒚 warranty with instant replacement",
+            "mess7": "🌈 𝑨𝒄𝒄𝒆𝒔𝒔 𝒕𝒐 𝑮𝒂𝒎𝒆 𝑽𝒂𝒖𝒍𝒕 of up to 𝟐,𝟎𝟎𝟎 𝑯𝒂𝒄𝒌𝒆𝒅 𝑨𝒑𝒑𝒔",
+            "mess8": "🌟 Top 𝒄𝒆𝒓𝒕𝒊𝒇𝒊𝒄𝒂𝒕𝒆 provider in Vietnam!",
+            "mess9": "Not supported on Blacklisted, Apple-Banned, or Bypass devices"
+        },
+        "package3": {
+            "saleHeader": "SALE 35%",
+            "priceOrignal": "$7 USD",
+            "priceDiscount": "$4.17 USD",
+            "mess1": "🚀 Certificate issued within 72 hours!",
+            "mess2": "🕒 Valid for up to 𝟑𝟔𝟓 days",
+            "mess3": "📱 Supports 𝑰𝑶𝑺 𝟏𝟔-𝟏𝟖 𝒊𝑷𝒉𝒐𝒏𝒆 𝒗𝒔 𝒊𝑷𝒂𝒅",
+            "mess4": "🔐 𝑼𝒏𝒍𝒊𝒎𝒊𝒕𝒆𝒅 IPA signing",
+            "mess5": "🔄 𝑬𝒂𝒔𝒚 𝒂𝒑𝒑 𝒄𝒍𝒐𝒏𝒊𝒏𝒈",
+            "mess6": "🛠️ 𝟏𝟓𝟎-𝒅𝒂𝒚 warranty with instant replacement",
+            "mess7": "🌈 𝑨𝒄𝒄𝒆𝒔𝒔 𝒕𝒐 𝑮𝒂𝒎𝒆 𝑽𝒂𝒖𝒍𝒕 of up to 𝟓,𝟎𝟎𝟎 𝑯𝒂𝒄𝒌𝒆𝒅 𝑨𝒑𝒑𝒔",
+            "mess8": "🌟 Top 𝒄𝒆𝒓𝒕𝒊𝒇𝒊𝒄𝒂𝒕𝒆 provider in Vietnam!",
+            "mess9": " 𝑨𝑷𝑷𝑳𝑬",
+            "mess10": "Not supported on Blacklisted, Apple-Banned, or Bypass devices"
+        },
+        "contact": {
+            "contactUs": "Contact Us"
+        },
+        "bank": {
+            "titleHeader": "Accepted Payment Methods",
+            "mess1": "Bank Transfer",
+            "mess2": "E-Wallet",
+            "mess3": "Mobile Payment"
+        }
+    }
+}

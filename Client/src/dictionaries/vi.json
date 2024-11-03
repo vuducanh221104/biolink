@@ -1,0 +1,94 @@
+{
+    "navBar": {
+        "menu1": "Mua Chứng Chỉ Apple",
+        "menu2": "Chứng Chỉ Esgin Miễn Phí",
+        "menu3": "Nhóm Check Uy Tín",
+        "menu4": "Liên Hệ"
+    },
+    "home": {
+        "facebook": "Facebook (Admin 1)",
+        "facebook2": "Facebook (Admin 2)",
+        "phone": "Zalo Admin",
+        "boxZalo": "Nhóm Chat Zalo",
+        "boxTele": "Nhóm Chat Telegram",
+
+        "buyCert": "MUA CHỨNG CHỈ 50K",
+        "buyCert1": "Xem Gói Chứng Chỉ Apple",
+        "buyCert2": "Nhóm Check Uy Tín",
+
+        "reviewBuy": "Nếu Bạn Muốn Có Nhu Cầu Mua Chứng Chỉ Esign | Gbox | Scarlet Với Giá 50k Thì inbox Cho mình Bên Trên Nhé",
+
+        "dns": "Cài Đặt DNS",
+
+        "install": "Tải Về",
+
+        "fileCert": "Tệp Chứng Chỉ (Esgin Cert)",
+
+        "ipaGameTitle": "Tệp Game IPA ✅",
+
+        "esginFree": "Esign Miễn Phí ✅",
+
+        "getUUID": "Lấy UUID Máy 📱",
+        "getUUID2": "GET UDID"
+    },
+    "notification": {
+        "welcome1": "THÔNG BÁO !!",
+        "welcome2": "Chào Mừng Đến Với Dinhhavn ✅<"
+    },
+
+    "cert": {
+        "only": "Chỉ Còn :",
+        "buyNow": "Mua Ngay",
+        "package1": {
+            "saleHeader": "SALE 20%",
+            "priceOrignal": "79.000đ",
+            "priceDiscount": "50.000đ",
+            "mess1": "🚀 Gói ưu đãi kích hoạt sau 𝟕𝟐 giờ!",
+            "mess2": "📱 Hỗ Trợ 𝑰𝑶𝑺 𝟏𝟔-𝟏𝟖 𝒊𝑷𝒉𝒐𝒏𝒆 𝒗𝒔 𝒊𝑷𝒂𝒅",
+            "mess3": "🕒 Sử dụng 𝟑𝟔𝟓 ngày",
+            "mess4": "🔐 Ký IPA, nhân bản ứng dụng",
+            "mess5": "🗓️ Hiệu lực 𝟏 năm",
+            "mess6": "🔧 Bảo hành 𝟏𝟎𝟎 ngày",
+            "mess7": "🌈 Được Nhận 𝑲𝒉𝒐 𝑮𝒂𝒎𝒆 𝑳𝑒̂𝒏 Đến 𝟏.𝟎𝟎𝟎 𝑨𝑷𝑷 𝑯𝒂𝒄𝒌",
+            "mess8": "Không hỗ trợ thiết bị Blacklist, Bị Apple Ban, Thiết bị Bypass"
+        },
+        "package2": {
+            "saleHeader": "SALE 20%",
+            "priceOrignal": "99.000đ",
+            "priceDiscount": "79.000đ",
+            "mess1": "🚀 Chứng chỉ cấp trong 𝟕𝟐 giờ!",
+            "mess2": "🕒 Sử dụng lên đến 𝟑𝟔𝟓 ngày.",
+            "mess3": "📱 Hỗ Trợ 𝑰𝑶𝑺 𝟏𝟔-𝟏𝟖 𝒊𝑷𝒉𝒐𝒏𝒆 𝒗𝒔 𝒊𝑷𝒂𝒅",
+            "mess4": "🔐 Ký IPA không giới hạn.",
+            "mess5": "🔄 Nhân bản ứng dụng dễ dàng.",
+            "mess6": "🛠️ Bảo hành 𝟏𝟓𝟎 ngày, cấp lại ngay.",
+            "mess7": "🌈 Được Nhận 𝑲𝒉𝒐 𝑮𝒂𝒎𝒆 𝑳𝑒̂𝒏 Đến 𝟐,𝟎𝟎𝟎 𝑨𝑷𝑷 𝑯𝒂𝒄𝒌",
+            "mess8": "🌟 Chứng chỉ hàng đầu tại Việt Nam!",
+            "mess9": "Không hỗ trợ thiết bị Blacklist, Bị Apple Ban, Thiết bị Bypass"
+        },
+        "package3": {
+            "saleHeader": "SALE 35%",
+            "priceOrignal": "150.000đ",
+            "priceDiscount": "100.000đ",
+            "mess1": "🚀 Chứng chỉ cấp trong 𝟕𝟐 giờ!",
+            "mess2": "🕒 Sử dụng lên đến 𝟑𝟔𝟓 ngày.",
+            "mess3": "📱 Hỗ Trợ 𝑰𝑶𝑺 𝟏𝟔-𝟏𝟖 𝒊𝑷𝒉𝒐𝒏𝒆 𝒗𝒔 𝒊𝑷𝒂𝒅",
+            "mess4": "🔐 Ký IPA không giới hạn.",
+            "mess5": "🔄 Nhân bản ứng dụng dễ dàng.",
+            "mess6": "🛠️ Bảo hành 𝟑𝟎𝟎 ngày, cấp lại ngay.",
+            "mess7": "🌈 Được Nhận 𝑲𝒉𝒐 𝑮𝒂𝒎𝒆 𝑳𝑒̂𝒏 Đến 𝟓,𝟎𝟎𝟎 𝑨𝑷𝑷 𝑯𝒂𝒄𝒌",
+            "mess8": "🌟 Chứng chỉ hàng đầu tại Việt Nam!",
+            "mess9": " 𝑨𝑷𝑷𝑳𝑬",
+            "mess10": "Không hỗ trợ thiết bị Blacklist, Bị Apple Ban, Thiết bị Bypass"
+        },
+        "contact": {
+            "contactUs": "Liên Hệ Với Chúng Tôi"
+        },
+        "bank": {
+            "titleHeader": "Chấp nhận thanh toán tự động qua",
+            "mess1": "Ngân Hàng",
+            "mess2": "Ví điện tử",
+            "mess3": "Tiền di động"
+        }
+    }
+}
