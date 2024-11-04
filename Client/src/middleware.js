@@ -18,8 +18,20 @@ export function middleware(request) {
     const { pathname } = request.nextUrl;
 
     // Skip if the pathname is an API endpoint or a public resource
-    if (pathname.startsWith('/api/') || pathname.startsWith('/dns')) {
-        return; // Do nothing for API paths or public resources
+    if (
+        pathname.startsWith('/api/') ||
+        pathname.startsWith('/dns') ||
+        pathname.startsWith('/ipa') ||
+        pathname.startsWith('/plist') ||
+        pathname.startsWith('/UUID') ||
+        pathname.startsWith('/_next/') ||
+        pathname.startsWith('/_next/') ||
+        pathname.startsWith('/Esign.png') ||
+        pathname.startsWith('/favicon.ico') ||
+        pathname.startsWith('/music.mp3') ||
+        pathname.match(/\.(png|ico|mp3)$/)
+    ) {
+        return;
     }
 
     const pathnameHasLocale = locales.some((locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`);
