@@ -86,7 +86,7 @@ export default function CertHome({ dict, lang }) {
                                     </li>
                                 </ul>
                             </div>
-                            <a className="btn-primary-buy" href={config.routesSocial.zalo}>
+                            <a className="btn-primary-buy" href={config.routesSocial.zaloHa}>
                                 {dict.cert.buyNow}
                             </a>
                         </div>
@@ -167,7 +167,9 @@ export default function CertHome({ dict, lang }) {
                                         {dict.cert.package2.mess9}
                                     </li>
                                 </ul>
-                                <button className="btn-primary-buy">{dict.cert.buyNow}</button>
+                                <a className="btn-primary-buy" href={config.routesSocial.zaloHa}>
+                                    {dict.cert.buyNow}
+                                </a>
                             </div>
                         </div>
                         <div className={'card-content card-child-3'}>
@@ -250,7 +252,9 @@ export default function CertHome({ dict, lang }) {
                                         {dict.cert.package3.mess10}
                                     </li>
                                 </ul>
-                                <button className="btn-primary-buy">{dict.cert.buyNow}</button>
+                                <a className="btn-primary-buy" href={config.routesSocial.zaloHa}>
+                                    {dict.cert.buyNow}
+                                </a>
                             </div>
                         </div>
                     </div>

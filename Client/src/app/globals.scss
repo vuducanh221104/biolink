@@ -6,7 +6,7 @@
 body {
     text-align: center;
     font-family: Georgia, serif;
-    background: url('https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif');
+    background: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2pndG16Z21rOTR2MTZsa2diODFzNHd3YWo3b3l4eXdmZDk1dWt1MCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/WWNObA6zP3wNZBYWlU/giphy.gif');
 }
 
 .cert-1 {
@@ -23,6 +23,19 @@ body {
             color: #0608ff !important;
             font-size: 15px;
         }
+    }
+}
+.cert-3 {
+    & a {
+        color: #0608ff !important;
+        background: #0068ff !important;
+    }
+}
+
+.cert-4 {
+    & a {
+        color: #0608ff !important;
+        background: #1500ff !important;
     }
 }
 .buy-cert-text-color {

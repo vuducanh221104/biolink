@@ -15,6 +15,7 @@ function PageHome({ dict, lang }) {
     const [showModal, setShowModal] = useState(false);
     const esignLinks = [
         { href: '/api/VNPOST', label: 'Esign VIETNAM POSTS & TG - HCMC (UPDATE)' },
+        { href: '/api/Zhuhaishi', label: 'Zhuhaishi Technology Co., Ltd.(UPDATE)' },
         {
             href: '/api/GacTrump',
             label: 'Esign Gac Trumpchi Car Sales Co., Ltd (NEW)',
@@ -127,11 +128,19 @@ function PageHome({ dict, lang }) {
                         <i className="bi bi-telephone-fill">{dict.home.phone}</i>
                     </a>
                 </li>
-                <li>
+                <li className="cert-3">
                     <a target="_blank" href="https://zalo.me/g/buqlbt248">
                         <div>
                             <ZaloIcon />
                             {dict.home.boxZalo}
+                        </div>
+                    </a>
+                </li>
+                <li className="cert-4">
+                    <a target="_blank" href="https://zalo.me/g/bzlzbh047">
+                        <div>
+                            <ZaloIcon />
+                            {dict.home.boxZalo2}
                         </div>
                     </a>
                 </li>

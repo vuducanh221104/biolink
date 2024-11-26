@@ -9,14 +9,14 @@ function Contact({ dict }) {
                     <p className="text-footer">- {dict.cert.contact.contactUs} -</p>
                     <a
                         target="_blank"
-                        href="https://www.facebook.com/I.Am.DucAnh123"
+                        href="https://www.facebook.com/daodinhha97?mibextid=LQQJ4d"
                         role="button"
                         className="wrapper-icon-social"
                     >
                         <FaceBookICcon className="icon-social" />
                     </a>
 
-                    <a target="_blank" href="https://zalo.me/0377775528" role="button" className="wrapper-icon-social">
+                    <a target="_blank" href="https://zalo.me/84967890629" role="button" className="wrapper-icon-social">
                         <ZaloIcon className="icon-social" />
                     </a>
 
