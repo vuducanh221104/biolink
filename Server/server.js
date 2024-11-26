@@ -39,6 +39,8 @@ const MyLan =
     'itms-services://?action=download-manifest&url=https://dinhhavn.id.vn/plist/com.dinhhavn.vip.link14.plist';
 const Arada =
     'itms-services://?action=download-manifest&url=https://dinhhavn.id.vn/plist/com.dinhhavn.vip.link16.plist';
+const Zhuhaishi =
+    'itms-services://?action=download-manifest&url=https://dinhhavn.id.vn/plist/com.dinhhavn.vip.link17.plist';
 
 //DNS VÀ CERT
 const DNS = 'https://dinhhavn.id.vn/dns/dns.mobileconfig';
@@ -120,6 +122,9 @@ app.get('/api/MyLan', (req, res) => {
 });
 app.get('/api/Arada', (req, res) => {
     res.redirect(Arada);
+});
+app.get('/api/Zhuhaishi', (req, res) => {
+    res.redirect(Zhuhaishi);
 });
 
 app.get('/api/submit-uuid', (req, res) => {
