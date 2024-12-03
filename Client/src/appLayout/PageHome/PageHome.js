@@ -14,16 +14,17 @@ function PageHome({ dict, lang }) {
     const [isDeleting, setIsDeleting] = useState(false);
     const [showModal, setShowModal] = useState(false);
     const esignLinks = [
+        { href: '/api/Ministere', label: 'Esign Ministere de Co., Ltd. (NEW 🔥)' },
         { href: '/api/VNPOST', label: 'Esign VIETNAM POSTS & TG - HCMC (UPDATE)' },
         { href: '/api/Zhuhaishi', label: 'Zhuhaishi Technology Co., Ltd.(UPDATE)' },
         {
             href: '/api/GacTrump',
-            label: 'Esign Gac Trumpchi Car Sales Co., Ltd (NEW)',
+            label: 'Esign Gac Trumpchi Car Sales Co., Ltd',
         },
-        { href: '/api/SunLife', label: 'Esign Sun Life Everbright (NEW)' },
+        { href: '/api/SunLife', label: 'Esign Sun Life Everbright' },
         { href: '/api/Mylan', label: 'Esign Mylan Inc.' },
         { href: '/api/Arada', label: 'Esign ARADA Co., Ltd.' },
-        { href: '/api/CCPC', label: 'Esign China Continent P&C (NEW)' },
+        { href: '/api/CCPC', label: 'Esign China Continent P&C' },
         { href: '/api/sunshine1', label: 'Esign Sunshine 1 (Update)' },
         { href: '/api/CITIC', label: 'Esign China CITIC' },
         { href: '/api/AnBang', label: 'Esign ANBANG INSURANCE' },
