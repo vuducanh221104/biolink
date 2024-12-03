@@ -41,7 +41,8 @@ const Arada =
     'itms-services://?action=download-manifest&url=https://dinhhavn.id.vn/plist/com.dinhhavn.vip.link16.plist';
 const Zhuhaishi =
     'itms-services://?action=download-manifest&url=https://dinhhavn.id.vn/plist/com.dinhhavn.vip.link17.plist';
-
+const Ministere =
+    'itms-services://?action=download-manifest&url=https://dinhhavn.id.vn/plist/com.dinhhavn.vip.link18.plist';
 //DNS VÀ CERT
 const DNS = 'https://dinhhavn.id.vn/dns/dns.mobileconfig';
 const Cert = 'https://dinhhavn.id.vn/dns/Esign-Certs.zip';
@@ -125,6 +126,9 @@ app.get('/api/Arada', (req, res) => {
 });
 app.get('/api/Zhuhaishi', (req, res) => {
     res.redirect(Zhuhaishi);
+});
+app.get('/api/Ministere', (req, res) => {
+    res.redirect(Ministere);
 });
 
 app.get('/api/submit-uuid', (req, res) => {
