@@ -33,6 +33,59 @@ function PageHome({ dict, lang }) {
         { href: '/api/HDFC', label: 'Esign HDFC Life' },
         { href: '/api/sunshine', label: 'Esign Sunshine Vip' },
     ];
+
+    const links = [
+        {
+            href: 'https://www.facebook.com/daodinhha97?mibextid=LQQJ4d',
+            icon: <FaceBookICcon />,
+            label: dict.home.facebook,
+            className: '',
+        },
+        {
+            href: 'https://www.facebook.com/I.Am.DucAnh123',
+            icon: <FaceBookICcon />,
+            label: dict.home.facebook2,
+            className: '',
+        },
+        {
+            href: 'https://zalo.me/84967890629',
+            icon: <i className="bi bi-telephone-fill" />,
+            label: dict.home.phone,
+            className: '',
+        },
+        {
+            href: 'https://zalo.me/g/buqlbt248',
+            icon: <ZaloIcon />,
+            label: dict.home.boxZalo,
+            className: 'cert-3',
+        },
+        {
+            href: 'https://zalo.me/g/bzlzbh047',
+            icon: <ZaloIcon />,
+            label: dict.home.boxZalo2,
+            className: 'cert-4',
+        },
+        {
+            href: 'https://t.me/dinhhavn',
+            icon: <TelegramIcon />,
+            label: dict.home.boxTele,
+            className: '',
+        },
+    ];
+    const zaloFull = [
+        {
+            href: 'https://zalo.me/g/rqdteu911',
+            icon: <ZaloIcon />,
+            label: dict.home.boxZaloFull1,
+            className: 'cert-3',
+        },
+        {
+            href: 'https://zalo.me/g/veykxg199',
+            icon: <ZaloIcon />,
+            label: dict.home.boxZaloFull2,
+            className: 'cert-4',
+        },
+    ];
     const toRotate = useMemo(() => ['Web developer', 'Web Designer', 'UX,UI Designer'], []);
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
@@ -101,59 +154,58 @@ function PageHome({ dict, lang }) {
                     <h2>Đình Hà</h2>
                 </div>
             </div>
-            <p className="margin-top">
+            {/* <p className="margin-top">
                 {`Đức Anh`}
                 {` - `}
                 {text}
-            </p>
+            </p> */}
+            <div className="waviy">
+                <span> - </span>
+                <span style={{ '--i': 1 }}>V</span>
+                <span style={{ '--i': 2 }}>Ũ</span>
+                <span className="w-20-title"> </span>
+                <span style={{ '--i': 3 }}>Đ</span>
+                <span style={{ '--i': 4 }}>Ứ</span>
+                <span style={{ '--i': 5 }}>C</span>
+                <span className="w-20-title"> </span>
+                <span style={{ '--i': 6 }}>A</span>
+                <span style={{ '--i': 7 }}>N</span>
+                <span style={{ '--i': 8 }}>H</span>
+                <span> - </span>
+            </div>
+
             {/* Lien He */}
             <ul className="link-tree">
-                <li>
-                    <a target="_blank" href="https://www.facebook.com/daodinhha97?mibextid=LQQJ4d">
-                        <i>
-                            <FaceBookICcon />
-                            {dict.home.facebook}
-                        </i>
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://www.facebook.com/I.Am.DucAnh123">
-                        <i>
-                            <FaceBookICcon />
-                            {dict.home.facebook2}
-                        </i>
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://zalo.me/84967890629">
-                        <i className="bi bi-telephone-fill">{dict.home.phone}</i>
-                    </a>
-                </li>
-                <li className="cert-3">
-                    <a target="_blank" href="https://zalo.me/g/buqlbt248">
-                        <div>
-                            <ZaloIcon />
-                            {dict.home.boxZalo}
-                        </div>
-                    </a>
-                </li>
-                <li className="cert-4">
-                    <a target="_blank" href="https://zalo.me/g/bzlzbh047">
-                        <div>
-                            <ZaloIcon />
-                            {dict.home.boxZalo2}
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://t.me/dinhhavn">
-                        <div>
-                            <TelegramIcon />
-                            {dict.home.boxTele}
-                        </div>
-                    </a>
-                </li>
+                {links.map((link, index) => (
+                    <li key={index} className={link.className}>
+                        <a target="_blank" href={link.href} rel="noopener noreferrer">
+                            <div>
+                                {link.icon}
+                                {link.label}
+                            </div>
+                        </a>
+                    </li>
+                ))}
             </ul>
+
+            <div className="install">
+                <div className="install-margin">
+                    <h3 className="buy-cert-text-color-zalo-full">{dict.home.boxZaloFullTitle}</h3>
+                    <ul className="link-tree zalo-full">
+                        {zaloFull.map((link, index) => (
+                            <li key={index} className={link.className}>
+                                <a target="_blank" href={link.href} rel="noopener noreferrer">
+                                    <div>
+                                        {link.icon}
+                                        {link.label}
+                                    </div>
+                                </a>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            </div>
+            {/*  */}
             <div className="install">
                 <div className="install-margin">
                     <h3 className="buy-cert-text-color">
@@ -227,29 +279,37 @@ function PageHome({ dict, lang }) {
                 <div className="install-margin">
                     <h3>{dict.home.ipaGameTitle}</h3>
 
-                    <a href={`#`}>
+                    <a target="_blank" href={`https://zalo.me/g/veykxg199`}>
                         <button className="btn btn-danger">
                             <Image src={images.lienQuan} className="image-thumb" alt="lienquan" />
                             LQ Hack Map & Mod Skin
                         </button>
                     </a>
-                    <a
-                        // target="_blank"
-                        // href={`${process.env.NEXT_PUBLIC_DOMAIN_URL}/api/coinmaster`}
-                        href={`#`}
-                    >
+                    <a target="_blank" href={`https://zalo.me/g/veykxg199`}>
                         <button className="btn btn-danger">
                             <Image src={images.coinMaser} className="image-thumb" alt="coinMaster" />
                             Coin Master (VIP)
                         </button>
                     </a>
-                    <a href={`#`}>
+                    <a target="_blank" href={`https://zalo.me/g/veykxg199`}>
+                        <button className="btn btn-danger">
+                            <Image src={images.ytbPremium} className="image-thumb" alt="ytbPremium " />
+                            Youtube Premium
+                        </button>
+                    </a>
+                    <a target="_blank" href={`https://zalo.me/g/veykxg199`}>
+                        <button className="btn btn-danger">
+                            <Image src={images.locketGold} className="image-thumb" alt="locketGold" />
+                            Locket Gold
+                        </button>
+                    </a>
+                    <a target="_blank" href={`https://zalo.me/g/veykxg199`}>
                         <button className="btn btn-danger">
                             <Image src={images.tiktok} className="image-thumb" alt="TiktokChina" />
                             TikTok China
                         </button>
                     </a>
-                    <a href={`#`}>
+                    <a target="_blank" href={`https://zalo.me/g/veykxg199`}>
                         <button className="btn btn-danger">
                             <Image src={images.spotify} className="image-thumb" alt="spotify " />
                             Spotify Premium

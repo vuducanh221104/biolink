@@ -41,6 +41,9 @@ body {
 .buy-cert-text-color {
     color: #05ff00 !important;
 }
+.buy-cert-text-color-zalo-full {
+    color: #6a00ff !important;
+}
 .apple-icon {
     margin-top: 5px;
     color: red;
@@ -189,6 +192,13 @@ p {
 
 .link-tree > li:nth-child(4) a {
     background: #4d88a8;
+}
+
+.link-tree.zalo-full > li:nth-child(1) a {
+    background: #772e2e !important;
+}
+.link-tree.zalo-full > li:nth-child(2) a {
+    background: #ff0000 !important;
 }
 
 .link-tree > li a:hover {
@@ -440,5 +450,36 @@ audio {
     to {
         transform: translateX(0);
         opacity: 1;
+    }
+}
+.waviy {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+    font-size: 17px;
+}
+.waviy span {
+    font-family: 'Alfa Slab One', cursive;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    animation: waviy 1s infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+.w-20-title {
+    width: 10px !important;
+}
+@keyframes waviy {
+    0%,
+    40%,
+    100% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-10px);
     }
 }
