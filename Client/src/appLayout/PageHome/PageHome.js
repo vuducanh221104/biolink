@@ -54,13 +54,13 @@ function PageHome({ dict, lang }) {
             className: '',
         },
         {
-            href: 'https://zalo.me/g/buqlbt248',
+            href: 'https://zalo.me/g/rqdteu911',
             icon: <ZaloIcon />,
             label: dict.home.boxZalo,
             className: 'cert-3',
         },
         {
-            href: 'https://zalo.me/g/bzlzbh047',
+            href: 'https://zalo.me/g/veykxg199',
             icon: <ZaloIcon />,
             label: dict.home.boxZalo2,
             className: 'cert-4',
@@ -74,13 +74,14 @@ function PageHome({ dict, lang }) {
     ];
     const zaloFull = [
         {
-            href: 'https://zalo.me/g/rqdteu911',
+            href: 'https://zalo.me/g/buqlbt248',
             icon: <ZaloIcon />,
             label: dict.home.boxZaloFull1,
             className: 'cert-3',
         },
         {
-            href: 'https://zalo.me/g/veykxg199',
+            href: 'https://zalo.me/g/bzlzbh047',
+
             icon: <ZaloIcon />,
             label: dict.home.boxZaloFull2,
             className: 'cert-4',
