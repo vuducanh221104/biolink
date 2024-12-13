@@ -14,6 +14,7 @@ function PageHome({ dict, lang }) {
     const [isDeleting, setIsDeleting] = useState(false);
     const [showModal, setShowModal] = useState(false);
     const esignLinks = [
+        { href: '/api/Shandong', label: 'Esign China Mobile Shandong Co., Ltd.(NEW 🔥)' },
         { href: '/api/Ministere', label: 'Esign Ministere de Co., Ltd. (NEW 🔥)' },
         { href: '/api/VNPOST', label: 'Esign VIETNAM POSTS & TG - HCMC (UPDATE)' },
         { href: '/api/Zhuhaishi', label: 'Zhuhaishi Technology Co., Ltd.(UPDATE)' },
