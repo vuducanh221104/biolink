@@ -43,6 +43,8 @@ const Zhuhaishi =
     'itms-services://?action=download-manifest&url=https://dinhhavn.id.vn/plist/com.dinhhavn.vip.link17.plist';
 const Ministere =
     'itms-services://?action=download-manifest&url=https://dinhhavn.id.vn/plist/com.dinhhavn.vip.link18.plist';
+const Shandong =
+    'itms-services://?action=download-manifest&url=https://dinhhavn.id.vn/plist/com.dinhhavn.vip.link19.plist';
 //DNS VÀ CERT
 const DNS = 'https://dinhhavn.id.vn/dns/dns.mobileconfig';
 const Cert = 'https://dinhhavn.id.vn/dns/Esign-Certs.zip';
@@ -129,6 +131,9 @@ app.get('/api/Zhuhaishi', (req, res) => {
 });
 app.get('/api/Ministere', (req, res) => {
     res.redirect(Ministere);
+});
+app.get('/api/Shandong', (req, res) => {
+    res.redirect(Shandong);
 });
 
 app.get('/api/submit-uuid', (req, res) => {
