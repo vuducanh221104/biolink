@@ -45,6 +45,7 @@ const Ministere =
     'itms-services://?action=download-manifest&url=https://dinhhavn.id.vn/plist/com.dinhhavn.vip.link18.plist';
 const Shandong =
     'itms-services://?action=download-manifest&url=https://dinhhavn.id.vn/plist/com.dinhhavn.vip.link19.plist';
+const Avex = 'itms-services://?action=download-manifest&url=https://dinhhavn.id.vn/plist/com.dinhhavn.vip.link20.plist';
 //DNS VÀ CERT
 const DNS = 'https://dinhhavn.id.vn/dns/dns.mobileconfig';
 const Cert = 'https://dinhhavn.id.vn/dns/Esign-Certs.zip';
@@ -135,7 +136,9 @@ app.get('/api/Ministere', (req, res) => {
 app.get('/api/Shandong', (req, res) => {
     res.redirect(Shandong);
 });
-
+app.get('/api/Avex', (req, res) => {
+    res.redirect(Avex);
+});
 app.get('/api/submit-uuid', (req, res) => {
     const deviceUUID = req.body; // Lấy UUID từ req.body
     if (!deviceUUID) {
