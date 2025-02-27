@@ -46,6 +46,9 @@ const Ministere =
 const Shandong =
     'itms-services://?action=download-manifest&url=https://dinhhavn.id.vn/plist/com.dinhhavn.vip.link19.plist';
 const Avex = 'itms-services://?action=download-manifest&url=https://dinhhavn.id.vn/plist/com.dinhhavn.vip.link20.plist';
+const Kotak =
+    'itms-services://?action=download-manifest&url=https://dinhhavn.id.vn/plist/com.dinhhavn.vip.link21.plist';
+
 //DNS VÀ CERT
 const DNS = 'https://dinhhavn.id.vn/dns/dns.mobileconfig';
 const Cert = 'https://dinhhavn.id.vn/dns/Esign-Certs.zip';
@@ -138,6 +141,9 @@ app.get('/api/Shandong', (req, res) => {
 });
 app.get('/api/Avex', (req, res) => {
     res.redirect(Avex);
+});
+app.get('/api/Kotak', (req, res) => {
+    res.redirect(Kotak);
 });
 app.get('/api/submit-uuid', (req, res) => {
     const deviceUUID = req.body; // Lấy UUID từ req.body
