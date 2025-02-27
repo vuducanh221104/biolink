@@ -14,6 +14,7 @@ function PageHome({ dict, lang }) {
     const [isDeleting, setIsDeleting] = useState(false);
     const [showModal, setShowModal] = useState(false);
     const esignLinks = [
+        { href: '/api/Kotak', label: 'Esign KOTAK MAHINDRA BANK Co., Ltd (100% Ký Được ✅)' },
         { href: '/api/Avex', label: 'Esign AVEX DIGITAL ..INC(NEW 🔥)' },
         { href: '/api/Shandong', label: 'Esign China Mobile Shandong Co., Ltd.(NEW 🔥)' },
         { href: '/api/Ministere', label: 'Esign Ministere de Co., Ltd.' },
